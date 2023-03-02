@@ -6,7 +6,7 @@ date = 2018-05-02
 lastmod = 2019-09-06T12:32:13-04:00
 tags = ["ramblings"]
 categories = ["unix"]
-draft = false
+draft = true
 +++
 
 
