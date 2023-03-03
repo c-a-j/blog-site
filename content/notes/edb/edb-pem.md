@@ -2,7 +2,7 @@
 title = "EDB Postgres Enterprise Manager"
 author = ["Clint Jordan"]
 description = " "
-date = 2018-05-02
+date = 2023-02-28
 lastmod = ""
 tags = ["EDB", "PEM"]
 categories = ["notes"]

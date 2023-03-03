@@ -2,8 +2,8 @@
 title = "EDB User Profile Management"
 author = ["Clint Jordan"]
 description = " "
-date = 2018-05-02
-lastmod = ""
+date = 2023-02-28
+lastmod = " "
 tags = ["EDB"]
 categories = ["notes"]
 draft = false
@@ -35,6 +35,7 @@ User profiles provide the following security features
 ```text
 edb=# select * from dba_profiles
 where profile='DEFAULT';
+
  profile |      resource_name       | resource_type |   limit   | common
 ---------+--------------------------+---------------+-----------+--------
  DEFAULT | FAILED_LOGIN_ATTEMPTS    | PASSWORD      | UNLIMITED | NO
