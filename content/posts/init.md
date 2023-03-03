@@ -92,25 +92,60 @@ text...
 ## The superiority of markdown and $\LaTeX$
 
 Both of these options would provide advantages over Word with just a little
-start up costs to develop solid templates. Everyone would stand to gain.
+start up costs to develop solid templates. 
 
-* Leadership gets readability, speed of development, and totally transparent
-    version control
-* Developers get simplicity, speed of develpement, and version control that
-    essentially the entire tech sector adopted almost 20 years ago
-* Operators get increased clarity, confidence in version control, and other
-    nice perks like click-to-copy code blocks
+* Advantages for leadership: 
+    * increased documentation readability
+    * speed of documentation development
+    * totally transparent version control
+* Advantages for developers
+    * increase simplicity of the documentation process
+    * increase speed of the documentation process
+    * elimination of menial and repetetive formatting tasks
+    * opportunity to use a version control process that essentially the entire
+        tech sector adopted nearly 20 years ago
+* Advantages for operators:
+    * increased clarity in documentation
+    * confidence in version control
+    * nice little perks like click-to-copy code blocks
 
 ### $\LaTeX$
 Sure, latex has the potential to look just as complicated as C++, but with
-a good template it can become reasonably close to plain text. Armed with a text
-editor and template, developers would be free to focus on the material 
+a good template it can become reasonably close to plain text. No matter how much
+time you spend fixing Word's formatting (over and over and over again), it still
+can't match the superior typsetting of latex even after 40 years of
+developement.
+
+With that being said, there is one disadvantage with latex, it must be compiled.
+However, with a solid template this should only need to be done a few times.
+The end result of the compilation is a nice PDF that can't accidentally be
+modified by operators (I can still hardly believe we distribute Word files for
+that reason alone).
 
 ### Markdown
-Markdown is the option best suited for our needs, in my opinion. 
+In my opinion, markdown is the option best suited for our needs. We could get
+close to plain text with a latex template, but markdown essentially *is* plain
+text. And since developers use github enterprise (code.fs) to store their code
+already, it just makes sense for them also store the documentation there using
+git.  There's a good reason that essentially the ***entire tech sector*** does
+this.  It's convenient and it looks really nice.  Take for example the following
+screenshot from a release notice written in MS Word.
+
+{{< rawhtml >}}
+<img src="/images/word_rn.png" width="100">
+{{< /rawhtml >}}
+
+The only thing separating instructional text and command input/output is
+a slight change in font. Additionally, different developers have different
+subtle styles of doing things, which can make some of these RNs hard to read and
+easy to get lost in. On the other hand, markdown makes documentation drastically
+clear.
+
+...
 
 ## The ability to find things
 
 Ahh, it's one of the most rudimentary capabilities that
 
 ## Version control like Linus intended
+
