@@ -114,7 +114,7 @@ Sure, latex has the potential to look just as complicated as C++, but with
 a good template it can become reasonably close to plain text. No matter how much
 time you spend fixing Word's formatting (over and over and over again), it still
 can't match the superior typsetting of latex even after 40 years of
-developement.
+development.
 
 With that being said, there is one disadvantage with latex, it must be compiled.
 However, with a solid template this should only need to be done a few times.
@@ -125,27 +125,11 @@ that reason alone).
 ### Markdown
 In my opinion, markdown is the option best suited for our needs. We could get
 close to plain text with a latex template, but markdown essentially *is* plain
-text. And since developers use github enterprise (code.fs) to store their code
-already, it just makes sense for them also store the documentation there using
-git.  There's a good reason that essentially the ***entire tech sector*** does
-this.  It's convenient and it looks really nice.  Take for example the following
-screenshot from a release notice written in MS Word.
-
-{{< rawhtml >}}
-<img src="/images/word_rn.png" width="100">
-{{< /rawhtml >}}
-
-The only thing separating instructional text and command input/output is
-a slight change in font. Additionally, different developers have different
-subtle styles of doing things, which can make some of these RNs hard to read and
-easy to get lost in. On the other hand, markdown makes documentation drastically
-clear.
-
-...
-
-## The ability to find things
-
-Ahh, it's one of the most rudimentary capabilities that
+text. That means almost no training is required. And since developers use github
+enterprise (code.fs) to store their code already, it just makes sense for them
+also store the documentation there using git.  There's a good reason that
+essentially the ***entire tech sector*** does this.  It's convenient and it
+looks really nice. 
 
 ## Version control like Linus intended
 
