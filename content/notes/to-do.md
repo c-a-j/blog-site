@@ -12,3 +12,6 @@ draft = true
 * Get rid of "link to text" feature
 * Implement Prism code blocks (maybe)
 * Update footer
+* change second and third level bullet characters
+* set in-line code highlight color
+* change h2 characters and links
