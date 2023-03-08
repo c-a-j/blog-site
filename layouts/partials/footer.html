@@ -78,4 +78,10 @@
     <script defer src="{{ $fragmention_js.RelPermalink }}"></script>
 {{ end }}
 
+<!-- <!-- Add prism script only to regular pages -->
+<!-- {{ if .IsPage }} -->
+<!--     <link href="css/prism.css" rel="stylesheet"></link> -->
+<!--     <script src="scripts/prism.js"></script>  -->
+<!-- {{ end }} -->
+
 {{ partialCached "h-card.html" . }}

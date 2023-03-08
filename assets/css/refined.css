@@ -1402,6 +1402,7 @@ a.pagination-item {
 /* * Code Blocks: pre,.. */
 mono, tt, code, pre {
     font-family: var(--mono);
+    background-color: var(--theme-inline-code-bg-color);
 }
 
 code {
@@ -1498,18 +1499,19 @@ div.highlight {   /* .. For lang identifiers recognized by Chroma, apply to the 
    the pygmentize generated CSS file also needs to be generated;
    see static/css/pygmentize.css.
 */
-[data-lang]::before {
-    color: var(--theme-color);
-    background: var(--theme-color-light);
-    /* When changing the below padding, adjust the padding-top in the "pre" rule */
-    padding: 0.25em 0.5em;       /* top/bottom left/right */
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    /* content: attr(data-lang); */
-    /* Above is a short hand for the below explicit content specification,
-       though you lose the control on letter casing. */
-}
+[data-lang]::before { 
+    font-size: 9pt;
+    color: var(--theme-color); 
+    background: var(--theme-color-light); 
+    /* When changing the below padding, adjust the padding-top in the "pre" rule */ 
+    padding: 0.25em 0.5em;       /* top/bottom left/right */ 
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    /* content: attr(data-lang); */ 
+    /* Above is a short hand for the below explicit content specification, 
+       though you lose the control on letter casing. */ 
+} 
 
 /* https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages */
 /* Below, the 'pre' qualifier is needed because we want the lang
@@ -2108,26 +2110,26 @@ div.reply-links {
     border-bottom: none; /* Remove underlines done using bottom border, if any */
 }
 
-/* Fragmentioner - https://github.com/kartikprabhu/fragmentioner */
-#fragmentioner-ui {
-    font-family: var(--tertiary-font);
-    position:absolute;
-    top:-100%;
-    background: #111;
-    padding:0.25em;
-}
-
-#fragmentioner-ui a {
-    color:#fafafa;
-}
-#fragmentioner-ui a:hover {
-    color: inherit;
-}
-
-/* Highlight for fragmentions */
-[fragmention] {
-    background: var(--theme-hl2-transp-color);
-}
+/* /* Fragmentioner - https://github.com/kartikprabhu/fragmentioner */ */
+/* #fragmentioner-ui { */
+/*     font-family: var(--tertiary-font); */
+/*     position:absolute; */
+/*     top:-100%; */
+/*     background: #111; */
+/*     padding:0.25em; */
+/* } */
+/*  */
+/* #fragmentioner-ui a { */
+/*     color:#fafafa; */
+/* } */
+/* #fragmentioner-ui a:hover { */
+/*     color: inherit; */
+/* } */
+/*  */
+/* /* Highlight for fragmentions */ */
+/* [fragmention] { */
+/*     background: var(--theme-hl2-transp-color); */
+/* } */
 
 /* Search */
 .search h1 {

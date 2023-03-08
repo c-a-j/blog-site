@@ -17,6 +17,7 @@
     hamburger_bg_color = "#343a40"
     table_odd_color = "#5c6166"
     table_even_color = "#484d53"
+    inline_code_bg_color = "#24282c"
 
 [red]
   # palette: https://coolors.co/ac4142-413b39-4d4642-6d625f-bdb5b3

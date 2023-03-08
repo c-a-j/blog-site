@@ -84,11 +84,13 @@
          --theme-hamburger-bg-color: {{ index . "hamburger_bg_color" | safeCSS }};
          --theme-table-odd-color: {{ index . "table_odd_color" | safeCSS }};
          --theme-table-even-color: {{ index . "table_even_color" | safeCSS }};
+         --theme-inline-code-bg-color: {{ index . "inline_code_bg_color" | safeCSS }};
      }
      {{ end }}
      html {
          line-height: 1.5;
      }
+
     </style>
 
     <!-- Above style minified:
