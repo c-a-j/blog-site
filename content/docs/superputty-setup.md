@@ -64,8 +64,7 @@ saved PuTTY sessions over the years and now you've decided that the font size
 needs to increase. In PuTTY, you would have to load, increase the font size, and
 save the new settings for all 100 sessions *individually*. If you decided that
 the font type needs to change a few weeks later...same story all over again.
-A process like this could take hours from your day and proceeding with option
-1 does nothing to remedy this issue.
+Option 1 alone does nothing to remedy this issue.
 
 On the other hand, if you have a little time to invest in options 2 or 3, you
 could reduce the number of saved PuTTY settings from 100 to 1. That's right, you
@@ -129,13 +128,13 @@ this:
 <img src="/images/fresh-putty.png">
 {{< /rawhtml >}}
 
-If you're a person who prefers to have the terminal styled differently depending
-on the host or type of work being performed, just save a few more general
-profiles. For example, if you want PROD, DEV, and TEST servers to have different
-background colors and/or fonts, you could create new profiles called PROD, DEV,
-and TEST starting with the default. After doing this the PuTTY configuration
-window would look like the screenshot below and you'll have four different
-profiles to choose from when adding new sessions in SuperPuTTY.
+If you prefer to have the terminal styled differently depending on the host or
+type of work being performed, just save a few more general profiles. For
+example, if you want PROD, DEV, and TEST servers to have different background
+colors and/or fonts, you could create new profiles called PROD, DEV, and TEST
+starting with the default. After doing this the PuTTY configuration window would
+look like the screenshot below and there will be four different profiles to
+choose from in SuperPuTTY.
 
 {{< rawhtml >}}
 <img src="/images/custom-putty.png">
@@ -160,8 +159,7 @@ If you changed all the SuperPuTTY sessions to use the default profile as
 outlined in [**2 Session
 Configuration**](/docs/superputty-setup/#2-session-configuration), now your
 p-account will automatically be inserted when opening new sessions. The purpose
-of [**2 Session Configuration**](/docs/superputty-setup/#2-session-configuration) 
-should now be abundantly clear. Let's take it a step further.
+of should now be very clear. Let's take the efficiency a step further.
 
 ### 3.2 Configure CAPI authentication
 
@@ -252,9 +250,7 @@ $ ls -la ~/.ssh/authorized_keys
 If the previous steps were followed correctly, you should now be able to log
 into new SuperPuTTY sessions with your PIV credentials. Nifty!
 
-## 4. Set up crucial hot keys
-
-Ok, they're not *really* crucial, but they are crucial to me.
+## 4. Configure helpful hot keys
 
 ### 4.1 Moving through tabs
 
@@ -269,7 +265,7 @@ whatever you like. For example, I have mine set to `Ctrl+.` and `Ctrl+,` for
 NextTab and PrevTab, respectively. This might seem like a strange choice at
 first glance, but those are also the keys for `>` and `<`, which may make
 a little more sense. Additionally, I have tmux set up to change windows with
-those same keys, but using `Alt` instead of `Ctrl`. More on that in another doc.
+those same keys, but using `Alt` instead of `Ctrl`.
 
 For some reason that is completely mysterious to me, SuperPuTTY allows for
 changing tabs while maintaining the cursor focus in another tab. This means that
