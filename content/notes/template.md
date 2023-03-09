@@ -2,7 +2,7 @@
 title = "some notes"
 author = ["Clint Jordan"]
 description = "description"
-date = "2023-03-02"
+date = "2020-01-01"
 lastmod = ""
 tags = ["template"]
 categories = ["notes"]

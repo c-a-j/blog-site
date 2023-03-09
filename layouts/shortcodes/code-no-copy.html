@@ -1,0 +1,25 @@
+<!-- raw html -->
+<html lang="en"><!-- The head is omitted. -->
+<div class="highlight"> 
+    <div class="code-toolbar">
+        <pre 
+            class="language-{{ .Get "lang" }}"
+            tabindex="0" 
+            style="
+                display:block;
+                color:#f8f8f2;
+                background-color:#272822;
+                -moz-tab-size:4;
+                -o-tab-size:4;tab-size:4;
+                "
+            lang="en"
+            data-prismjs-copy=""
+            data-prismjs-copy-error=""
+            data-prismjs-copy-success="">
+            <code class="language-{{ .Get "lang" }}">
+                    {{.Inner}}
+            </code>
+        </pre>
+    </div>
+</div>
+</html>

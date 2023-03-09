@@ -16,7 +16,20 @@ draft = true
     * kind of got it, didn't get it to a place that was better than chroma
     * also didn't find out exactly where to link the css and html
     * may be easier to implement a click-to-copy for chroma
-```text
+* Update footer
+* Change second and third level bullet characters
+* set in-line code highlight color
+    * done
+* change h2 characters and links
+    * `assets/css/refined.css`, lines 821 - 836
+
+## Implement Prism code blocks (maybe)
+* kind of got it, didn't get it to a place that was better than chroma
+* also didn't find out exactly where to link the css and html
+* may be easier to implement a click-to-copy for chroma
+* took `code-no-copy.html` shortcode from other website
+
+```html
 <!DOCTYPE html>
   <html>
   <head>
@@ -28,9 +41,6 @@ draft = true
   </body>
   </html>
 ```
-* Update footer
-* Change second and third level bullet characters
-* set in-line code highlight color
-    * done
-* change h2 characters and links
-    * `assets/css/refined.css`, lines 821 - 836
+* placed `<script src="/js/prism.js"></script>` in `/layouts/_default/baseof.html`
+* placed `<link href="/css/prism.css" rel="stylesheet">` in `/layouts/partials/head.html`
+* works!
