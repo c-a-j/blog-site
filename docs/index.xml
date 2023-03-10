@@ -1,0 +1,1138 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>
+            
+            
+            Clint A Jordan</title>
+        <link>https://code.fs.usda.gov/pages/clint-jordan/site/</link>
+        <description>Recent content 
+            on Clint A Jordan</description>
+        
+        <lastBuildDate>Thu, 09 Mar 2023 17:17:00 -0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+            <atom:link href="https://code.fs.usda.gov/pages/clint-jordan/site/index.xml" rel="self" type="application/rss&#43;xml" />
+        
+            
+            <item>
+                <title>SQL Primer</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-sql-primer/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;date-types&#34;&gt;Date types&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#date-types&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Numeric Types&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Character Types&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Date/Time Types&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Other Types&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Advanced Server&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;NUMERIC&lt;/td&gt;
+&lt;td&gt;CHAR&lt;/td&gt;
+&lt;td&gt;TIMESTAMP&lt;/td&gt;
+&lt;td&gt;BYTEA&lt;/td&gt;
+&lt;td&gt;CLOB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;INTEGER&lt;/td&gt;
+&lt;td&gt;VARCHAR&lt;/td&gt;
+&lt;td&gt;DATE&lt;/td&gt;
+&lt;td&gt;BOOL&lt;/td&gt;
+&lt;td&gt;BLOB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SERIAL&lt;/td&gt;
+&lt;td&gt;TEXT&lt;/td&gt;
+&lt;td&gt;TIME&lt;/td&gt;
+&lt;td&gt;MONEY&lt;/td&gt;
+&lt;td&gt;VARCHAR2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;INTERVAL&lt;/td&gt;
+&lt;td&gt;XML&lt;/td&gt;
+&lt;td&gt;NUMBER&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;JSON&lt;/td&gt;
+&lt;td&gt;XMLTYPE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;JSONB&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">edb</category>
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/sql">sql</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-sql-primer/</guid>
+                <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>SuperPuTTY Setup</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/docs/superputty-setup/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;1-download-and-launch-superputty&#34;&gt;1. Download and launch SuperPuTTY&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#1-download-and-launch-superputty&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;11-download&#34;&gt;1.1 Download&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#11-download&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;p&gt;Download the latest zip archive
+&lt;a href=&#34;https://github.com/jimradford/superputty/releases/latest&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;12-unzip-the-archive&#34;&gt;1.2 Unzip the archive&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#12-unzip-the-archive&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;p&gt;Unzip the archive and move it to somewhere within the &lt;code&gt;C:\Users\{USERNAME}&lt;/code&gt;
+directory. For example, I decided to keep my SuperPuTTY files in
+&lt;code&gt;C:\Users\ClintJordan\bin&lt;/code&gt;, but feel free place them anywhere you like.&lt;/p&gt;
+
+&lt;h3 id=&#34;13-change-the-superputty-icon-and-pin-it&#34;&gt;1.3 Change the SuperPuTTY icon and pin it&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#13-change-the-superputty-icon-and-pin-it&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;p&gt;The SuperPuTTY icon will probably be set to the default command prompt icon,
+which could be confusing if you ever actually use the command prompt. To change
+the icon, follow the steps below.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right click on the SuperPuTTY executable and click on &lt;strong&gt;Create Shortcut&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Right click on the new shortcut and click on &lt;strong&gt;Properties&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Under the &lt;strong&gt;Shortcut&lt;/strong&gt; tab, click on &lt;strong&gt;Change Icon&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Browse&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to the PuTTY directory (likely &lt;code&gt;C:\Program Files\PuTTY&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Double click on the PuTTY executable&lt;/li&gt;
+&lt;li&gt;Select the icon with two computers connected by a lightening bolt&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Apply&lt;/strong&gt; then &lt;strong&gt;OK&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;If you have PuTTY currently pinned to the taskbar, unpin it&lt;/li&gt;
+&lt;li&gt;Double click on the new shortcut to open SuperPuTTY&lt;/li&gt;
+&lt;li&gt;Right click on the taskbar SuperPuTTY icon and pin it&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: Feel free to choose any icon you like. I chose to use the PuTTY icon
+because after switching to SuperPuTTY, there aren&amp;rsquo;t any reasons to ever
+open the standard PuTTY again. More details on this below.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;2-session-configuration&#34;&gt;2. Session Configuration&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#2-session-configuration&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;21-add-and-organize-sessions&#34;&gt;2.1 Add and organize sessions&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#21-add-and-organize-sessions&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;p&gt;There&amp;rsquo;s a few different ways to do this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;File -&amp;gt; Import Sessions -&amp;gt; From PuTTY Settings&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Build a new session directory structure in the SuperPuTTY sessions window&lt;/li&gt;
+&lt;li&gt;Hybrid 1 and 2 approach
+&lt;ul&gt;
+&lt;li&gt;import all your saved PuTTY sessions&lt;/li&gt;
+&lt;li&gt;organize all the sessions into a directory structure&lt;/li&gt;
+&lt;li&gt;delete all the saved PuTTY profiles except the default&lt;/li&gt;
+&lt;li&gt;modify all SuperPuTTY sessions to use the default PuTTY profile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Option 1 will probably get you up and running the quickest. But options 2 and
+3 lead to a &lt;em&gt;&lt;strong&gt;much&lt;/strong&gt;&lt;/em&gt; more efficient way of handling session settings.&lt;/p&gt;
+&lt;p&gt;To illustrate the advantage of options 2 and 3, let&amp;rsquo;s say you&amp;rsquo;ve accumulated 100
+saved PuTTY sessions over the years and now you&amp;rsquo;ve decided that the font size
+needs to increase. In PuTTY, you would have to load, increase the font size, and
+save the new settings for all 100 sessions &lt;em&gt;individually&lt;/em&gt;. If you decided that
+the font type needs to change a few weeks later&amp;hellip;same story all over again.
+Option 1 alone does nothing to remedy this issue.&lt;/p&gt;
+&lt;p&gt;On the other hand, if you have a little time to invest in options 2 or 3, you
+could reduce the number of saved PuTTY settings from 100 to 1. That&amp;rsquo;s right, you
+could change any setting in a single PuTTY profile and it will take effect in
+all 100 of your SuperPuTTY sessions. This tutorial will proceed assuming that
+you have taken the path of option 2.&lt;/p&gt;
+
+&lt;h4 id=&#34;211-create-session-directory-structure&#34;&gt;2.1.1 Create session directory structure&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#211-create-session-directory-structure&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;p&gt;The sessions window should be visible by default. If it&amp;rsquo;s not visible, select
+&lt;strong&gt;View -&amp;gt; Sessions&lt;/strong&gt;. Follow the steps below to start creating a session
+structure.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right click on &lt;strong&gt;PuTTY Sessions&lt;/strong&gt; and select new folder
+&lt;ul&gt;
+&lt;li&gt;create PROD, DEV, and TEST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Create subdirectories within PROD, DEV, and TEST
+&lt;ul&gt;
+&lt;li&gt;as a starting point, create a PALS folder under TEST&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Right click on the TEST/PALS folder and select &lt;strong&gt;New&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Session Name = &lt;code&gt;nfs0207 (db)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Host Name = &lt;code&gt;fsxnfsx0207.wrk.fs.usda.gov&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;PuTTY Session Profile = &lt;code&gt;Default Settings&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now just repeat that process for all new sessions. The above steps just outline
+a good example, feel free to organize and name sessions however you prefer.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Alternatively, if you went with option 3 (the hybrid approach), drag your
+imported sessions into appropriate folders and then edit all of them so they
+use the default profile.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now your session window might look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://code.fs.usda.gov/pages/clint-jordan/site/images/superputty-session-struct.png&#34; alt=&#34;session struct&#34;&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;212-clean-up-putty-profiles&#34;&gt;2.1.2 Clean up PuTTY profiles&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#212-clean-up-putty-profiles&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;p&gt;It would be a good idea at this point to back up your sessions list. If your
+list is incomplete and you haven&amp;rsquo;t already done so, you might also want to
+import your PuTTY Sessions as well. They will populate in a separate folder.&lt;/p&gt;
+&lt;p&gt;To import PuTTY sessions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;File -&amp;gt; Import Sessions -&amp;gt; From PuTTY Settings&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To export SuperPuTTY sessions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;File -&amp;gt; Export Sessions&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now that all your sessions in SuperPuTTY are backed up and set to use the
+default session profile, you can simply delete all the now unnecessary PuTTY
+profiles and start fresh. Access the PuTTY Configurations through &lt;strong&gt;Tools -&amp;gt;
+PuTTY Configuration&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before you do this be sure that the default profile is set up the way you
+want! Take time to compare your most frequently used sessions to your default
+profile. Be sure to save everything you want in the default.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After you have cleaned up, your PuTTY Configuration window should look like
+this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://code.fs.usda.gov/pages/clint-jordan/site/images/fresh-putty.png&#34; alt=&#34;fresh putty&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you prefer to have the terminal styled differently depending on the host or
+type of work being performed, just save a few more general profiles. For
+example, if you want PROD, DEV, and TEST servers to have different background
+colors and/or fonts, you could create new profiles called PROD, DEV, and TEST
+starting with the default. After doing this the PuTTY configuration window would
+look like the screenshot below and there will be four different profiles to
+choose from in SuperPuTTY.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://code.fs.usda.gov/pages/clint-jordan/site/images/custom-putty.png&#34; alt=&#34;custom putty&#34;&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-set-up-capi-authentication&#34;&gt;3. Set up CAPI authentication&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#3-set-up-capi-authentication&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;31-set-auto-login-username&#34;&gt;3.1 Set auto-login username&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#31-set-auto-login-username&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;p&gt;First, I recommend eliminating the need to type in your account name every time
+a new session is opened.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the PuTTY Configurations
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tools -&amp;gt; PuTTY Configuration&lt;/strong&gt; from SuperPuTTY&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Load the default profile&lt;/li&gt;
+&lt;li&gt;Navigate to &lt;strong&gt;Connection -&amp;gt; Data&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Insert your p-account into the &lt;strong&gt;Auto-login username&lt;/strong&gt; text bar&lt;/li&gt;
+&lt;li&gt;Navigate back to &lt;strong&gt;Session&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Highlight the default profile and click &lt;strong&gt;Save&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you changed all the SuperPuTTY sessions to use the default profile as
+outlined in &lt;a href=&#34;https://code.fs.usda.gov/pages/clint-jordan/site/docs/superputty-setup/#2-session-configuration&#34;&gt;&lt;strong&gt;2 Session
+Configuration&lt;/strong&gt;&lt;/a&gt;, now your
+p-account will automatically be inserted when opening new sessions. The purpose
+of should now be very clear. Let&amp;rsquo;s take the efficiency a step further.&lt;/p&gt;
+
+&lt;h3 id=&#34;32-configure-capi-authentication&#34;&gt;3.2 Configure CAPI authentication&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#32-configure-capi-authentication&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+
+&lt;h4 id=&#34;321-add-capi-keys-to-default-putty-profile&#34;&gt;3.2.1 Add CAPI keys to default PuTTY profile&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#321-add-capi-keys-to-default-putty-profile&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Open the PuTTY Configurations&lt;/li&gt;
+&lt;li&gt;Load the default profile&lt;/li&gt;
+&lt;li&gt;Navigate to &lt;strong&gt;Connection -&amp;gt; SSH -&amp;gt; Certificate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Set CAPI Cert&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ensure that your certificate is chosen (you may have a list)&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Navigate back to &lt;strong&gt;Session&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Highlight the default profile and click &lt;strong&gt;Save&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: &lt;strong&gt;3.2.1&lt;/strong&gt; must be repeated for all PuTTY profiles.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now open two new sessions, one in the production domain and the other in the
+dev/test domain. Repeat &lt;strong&gt;3.2.2&lt;/strong&gt; - &lt;strong&gt;3.2.4&lt;/strong&gt; for each domain.&lt;/p&gt;
+
+&lt;h4 id=&#34;322-check-for-the-existence-of-the-ssh-directory&#34;&gt;3.2.2 Check for the existence of the &lt;code&gt;~/.ssh&lt;/code&gt; directory.&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#322-check-for-the-existence-of-the-ssh-directory&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls -lad .ssh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;drwx------ 1 cjordan cjordan 4096 Feb 21 16:02 .ssh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you get &lt;code&gt;ls: cannot access &#39;.sshh&#39;: No such file or directory&lt;/code&gt;, then the
+directory must be created.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mkdir ~/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&#34;323-create-the-sshauthorized_keys-file&#34;&gt;3.2.3 Create the &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; file.&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#323-create-the-sshauthorized_keys-file&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cat &amp;gt; ~/.ssh/authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you hit enter on this command, the prompt will drop to the next line and
+wait for input. Now we must copy the CAPI public key from PuTTY.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the PuTTY Configurations&lt;/li&gt;
+&lt;li&gt;Load the default profile&lt;/li&gt;
+&lt;li&gt;Navigate to &lt;strong&gt;Connection -&amp;gt; SSH -&amp;gt; Certificate&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Copy to Clipboard&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go back to the terminal window and paste in the clipboard contents, press &lt;code&gt;Enter&lt;/code&gt;,
+then &lt;code&gt;Ctrl+D&lt;/code&gt;. It should have looked something like this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cat &amp;gt; ~/.ssh/authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-rsa gVVSvgd9lrPUY4rZIQsmDxsN6JljDI42GlgwVtQNxaek9KcLn9lEEC8R
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CAPI:69862ffda995 CN=JOHN DOE + OID.1.1=1200, OU=Department of Agriculture,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;O=U.S. Government, C=US
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Note: Your key will be much longer than this. I have stripped out many
+characters from mine for example.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Output the &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt; file and check the contents. It might be a good
+idea to open a Notepad file and paste in the CAPI key for comparison.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat ~/.ssh/authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It should start with &lt;code&gt;ssh-rsa&lt;/code&gt; and end with &lt;code&gt;C=US&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;324-remove-group-permissions-on-ssh-and-sshauthorized_keys&#34;&gt;3.2.4 Remove group permissions on &lt;code&gt;~/.ssh&lt;/code&gt; and &lt;code&gt;~/.ssh/authorized_keys&lt;/code&gt;.&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#324-remove-group-permissions-on-ssh-and-sshauthorized_keys&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ chmod 700 ~/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ chmod 600 ~/.ssh/authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Check the permissions.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls -lad ~/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;drwx------ 1 cjordan cjordan 4096 Feb 21 16:02 /home/cjordan/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls -la ~/.ssh/authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-rw------- 1 cjordan cjordan 546 Mar  2 16:18 authorized_keys
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the previous steps were followed correctly, you should now be able to log
+into new SuperPuTTY sessions with your PIV credentials. Nifty!&lt;/p&gt;
+
+&lt;h2 id=&#34;4-configure-helpful-hot-keys&#34;&gt;4. Configure helpful hot keys&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#4-configure-helpful-hot-keys&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;41-moving-through-tabs&#34;&gt;4.1 Moving through tabs&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#41-moving-through-tabs&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;p&gt;When doing work in a terminal, it&amp;rsquo;s more efficient to switch over to the mouse
+as little as possible. To achieve this workflow in SuperPuTTY, we need to set
+a few hot keys.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tools -&amp;gt; Options -&amp;gt; Shortcuts&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Look for two items in this window, &lt;strong&gt;NextTab&lt;/strong&gt; and &lt;strong&gt;PrevTab&lt;/strong&gt;. Set them to
+whatever you like. For example, I have mine set to &lt;code&gt;Ctrl+.&lt;/code&gt; and &lt;code&gt;Ctrl+,&lt;/code&gt; for
+NextTab and PrevTab, respectively. This might seem like a strange choice at
+first glance, but those are also the keys for &lt;code&gt;&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;&lt;/code&gt;, which may make
+a little more sense. Additionally, I have tmux set up to change windows with
+those same keys, but using &lt;code&gt;Alt&lt;/code&gt; instead of &lt;code&gt;Ctrl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For some reason that is completely mysterious to me, SuperPuTTY allows for
+changing tabs while maintaining the cursor focus in another tab. This means that
+it&amp;rsquo;s often possible to unintentionally send keys to tabs that you aren&amp;rsquo;t even
+looking at.  For this reason, you may want to set another key to change focus to
+the visible tab to avoid having to switch to the mouse for a click. Go back to
+&lt;strong&gt;Tools -&amp;gt; Options -&amp;gt; Shortcuts&lt;/strong&gt; and look for &lt;strong&gt;FocusActiveSession&lt;/strong&gt; and set it
+to anything you like. I set mine to &lt;code&gt;Ctrl+f&lt;/code&gt;.&lt;/p&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/docs">docs</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/workflow">workflow</category>
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/superputty">superputty</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/docs/superputty-setup/</guid>
+                <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>EPAS Security</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-security/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;access-control---pg_hbaconf&#34;&gt;Access control - pg_hba.conf&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#access-control---pg_hbaconf&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;host based access control file&lt;/li&gt;
+&lt;li&gt;located in the cluster data directory&lt;/li&gt;
+&lt;li&gt;read at startup, any change required reload&lt;/li&gt;
+&lt;li&gt;contain set of records, one per line&lt;/li&gt;
+&lt;li&gt;search record specifies connection type, database name, user name, client IP
+and method of authentication;&lt;/li&gt;
+&lt;li&gt;top to bottom read&lt;/li&gt;
+&lt;li&gt;hostnames, IPv6 and IPv4 supported&lt;/li&gt;
+&lt;li&gt;authentication methods, trust, reject, md5, password, gss, sspi, krb5, ident,
+peer, pam, ldap, radius, bsd, scram or cert&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;row-level-security-rls&#34;&gt;Row Level Security (RLS)&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#row-level-security-rls&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;GRANT and REVOKE can be used at table level&lt;/li&gt;
+&lt;li&gt;PostgreSQL supports security policies for limiting access at row level&lt;/li&gt;
+&lt;li&gt;by default, all rows of a table are visible&lt;/li&gt;
+&lt;li&gt;once RLS is enabled on a table, all queries must go through the security
+policy&lt;/li&gt;
+&lt;li&gt;security policies are controlled by DBA rather than application&lt;/li&gt;
+&lt;li&gt;RLS offers stronger security as it is enforced by the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; accounts (manager text, company text, contact_email text);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ALTER&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;TABLE&lt;/span&gt; accounts ENABLE &lt;span style=&#34;color:#66d9ef&#34;&gt;ROW&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LEVEL&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;SECURITY&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To create a policy on the accounts table to allow the managers role to view the
+rows of their accounts, the &lt;code&gt;CREATE POLICY&lt;/code&gt; command can be used:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; POLICY account_managers &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; accounts &lt;span style=&#34;color:#66d9ef&#34;&gt;TO&lt;/span&gt; managers &lt;span style=&#34;color:#66d9ef&#34;&gt;USING&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(manager &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;current_user&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To allow all users to view their own row in a user table, a simple policy can be
+used:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;CREATE&lt;/span&gt; POLICY user_policy &lt;span style=&#34;color:#66d9ef&#34;&gt;ON&lt;/span&gt; users &lt;span style=&#34;color:#66d9ef&#34;&gt;USING&lt;/span&gt; (&lt;span style=&#34;color:#66d9ef&#34;&gt;user&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;current_user&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;application-access&#34;&gt;Application access&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#application-access&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;application acces is controlled by settings in both &lt;code&gt;postgresql.conf&lt;/code&gt; and
+&lt;code&gt;pg_hba.conf&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;set the following parameters in &lt;code&gt;postgresql.conf&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;listen_addresses&lt;/li&gt;
+&lt;li&gt;max_connections&lt;/li&gt;
+&lt;li&gt;superuser_reserved_connections&lt;/li&gt;
+&lt;li&gt;port&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-redaction&#34;&gt;Data redaction&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#data-redaction&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;data redaction can be used to conceal data values from selected users&lt;/li&gt;
+&lt;li&gt;the redaction function is incorporated into redaction policy using &lt;code&gt;CREATE REDACTION POLICY&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;data redaction is controlled by &lt;code&gt;edb_data_redaction&lt;/code&gt; configuration parameter&lt;/li&gt;
+&lt;li&gt;useful for compliance to GDPR, PCI, and HIPAA standards&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">edb</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-security/</guid>
+                <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>History, query buffer, and output control</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-query-buffer/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;&lt;p&gt;Show the command history.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\s
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Save the command history to a file, &lt;code&gt;FILENAME&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\s FILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Edit the query buffer and then execute it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\e 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Open the query buffer in a file, &lt;code&gt;FILENAME&lt;/code&gt;, and execute it upon save.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\e FILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Save the query buffer to a file, &lt;code&gt;FILENAME&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\w FILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Direct the output of the next command to file, &lt;code&gt;FILENAME&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\o FILENAME
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Execute the query buffer and send output to file, &lt;code&gt;FILENAME&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\g
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Run previous query repeatedly.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\watch &amp;lt;seconds&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">edb</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-query-buffer/</guid>
+                <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>Meta commands</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-common-meta/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;information-commands&#34;&gt;Information commands&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#information-commands&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\d(i, s, t, v, b, S)[+] [pattern]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;lists information about indexes, sequences, tables, views, tablespaces or
+system objects. Any combination of letters may be used in any order, for example
+&lt;code&gt;\dvs&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; displays comments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\d[+] [pattern]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;for each relation describe/display the relation structure details&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; displays any comments associated with the columns of the table, and if the
+table has an OID column&lt;/li&gt;
+&lt;li&gt;without a pattern, &lt;code&gt;\d[+]&lt;/code&gt; is equivalent to &lt;code&gt;\dtvs[+]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\l [+]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;list the names, owners, and character set encodings of all the databases in
+the server&lt;/li&gt;
+&lt;li&gt;if +  is appended to the command name, database descriptions are also
+displayed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\dn+ [pattern]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;lists schemas (namespaces)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; adds permissions and description to output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\df+ [pattern]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;lists functions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; adds owner, language, source code, and description to output&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;other-common-meta-commands&#34;&gt;Other common meta commands&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#other-common-meta-commands&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\conninfo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;display current connection information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\q or ^d or quit or exit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;quits the edb-psql program&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\cd [directory]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;changes the current working directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\! [command]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;executes the specified system command&lt;/li&gt;
+&lt;li&gt;if no command is specified, escapes to a separate Unix shell&lt;/li&gt;
+&lt;li&gt;ex: print current working directory, &lt;code&gt;\! pwd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;help-commands&#34;&gt;Help commands&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#help-commands&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\?
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;display list of all meta commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\h [command]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;shows information about SQL commands&lt;/li&gt;
+&lt;li&gt;if command isn&amp;rsquo;t specified, lists all SQL commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb-psql --help
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;lists command line options for edb-psql&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">edb</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-common-meta/</guid>
+                <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>SQL/Protect</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-sql-protect/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#installation&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;p&gt;For Linux, install the &lt;code&gt;edb-asxx-server-sqlprotect&lt;/code&gt; RPM package where &lt;code&gt;xx&lt;/code&gt; is the
+EDB Postgres Advanced Server version number.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;yum install edb-as13-server-sqlprotect
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Note: After following the installation procedure in the EPAS13 RN,
+&lt;code&gt;edb-as13-server-sqlprotect&lt;/code&gt; was already installed.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;configuration&#34;&gt;Configuration&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#configuration&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;modify-the-postgresqlconf-file&#34;&gt;Modify the &lt;code&gt;postgresql.conf&lt;/code&gt; file&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#modify-the-postgresqlconf-file&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# Shared Preload Libraries
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;shared_preload_libraries = &amp;#39;$libdir/sqlprotect&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# SQL/Protect settings
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb_sql_protect.enabled = off
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb_sql_protect.level = learn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb_sql_protect.max_protected_roles = 64
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb_sql_protect.max_protected_relations = 1024
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb_sql_protect.max_queries_to_save = 5000
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">edb</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-sql-protect/</guid>
+                <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>Variables</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-variables/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;&lt;p&gt;Use &lt;code&gt;\set&lt;/code&gt; meta command to set a variable.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;=&amp;gt; \set city Edmonton
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;=&amp;gt; \echo :city
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Edmonton
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Use &lt;code&gt;\unset&lt;/code&gt; to delete a variable.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;\unset city
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">edb</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-variables/</guid>
+                <pubDate>Mon, 06 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>EDB schemas</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-schemas/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;creating-schemas&#34;&gt;Creating schemas&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#creating-schemas&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# CREATE SCHEMA IF NOT EXISTS schema_name [ AUTHORIZATION role-specification]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;role-specification&lt;/code&gt; here is the schema owner. It can be a user, group, or
+a role.&lt;/p&gt;
+&lt;p&gt;In Postgres, a user is &lt;em&gt;not&lt;/em&gt; a schema. A user is a global object which exists
+outside the database. Schemas are database level objects, so you must be
+connected to the target database before creating one. A schema is a collection
+of database tables, views, sequences, functions, and domains owned by a user.&lt;/p&gt;
+&lt;p&gt;Benefits of schemas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A database can contain one or more named schemas&lt;/li&gt;
+&lt;li&gt;By default, all databases contain a public schema&lt;/li&gt;
+&lt;li&gt;There are several reason to use schemas
+&lt;ul&gt;
+&lt;li&gt;to allow many users to use one database without interfereing with each
+other&lt;/li&gt;
+&lt;li&gt;to organize database objects into logical groups to make them more
+manageable&lt;/li&gt;
+&lt;li&gt;third-party applications can be put into separate shemas so they cannot
+collide with the names of other objects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example: if a depreciated application/user needs to be removed, its database
+schema can be dropped instead of dropping all its objects individually.&lt;/p&gt;
+&lt;p&gt;Below is an example of creating a new database, new users, and new db schemas.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=#
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# CREATE USER user1 PASSWORD &amp;#39;1&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE ROLE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# CREATE USER user2 PASSWORD &amp;#39;2&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE ROLE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# CREATE USER user3 PASSWORD &amp;#39;3&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE ROLE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Creates user1, user2, and user3. Users, groups, and roles are the same thing in
+PostgreSQL, with the only difference being that users have permission to log in
+by default. The CREATE USER and CREATE GROUP statements are actually aliases for
+the CREATE ROLE statement.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# CREATE DATABASE db1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE DATABASE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Creates a database called db1. It is owned by the superuser, enterprisedb.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# REVOKE CONNECT ON DATABASE db1 FROM public;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;REVOKE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This revokes connect privilege from everyone excluding the owner and
+superuser(s).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# GRANT CONNECT ON DATABASE db1 TO user1, user3;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GRANT
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Grants connect privilege to &lt;code&gt;user1&lt;/code&gt; and &lt;code&gt;user3&lt;/code&gt;;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# \c db1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(psql 13.4.8, server 13.4.8)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;You are now connected to database &amp;#34;db1&amp;#34; as user &amp;#34;enterprisedb&amp;#34;.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Connects to &lt;code&gt;db1&lt;/code&gt; in order to create schemas.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# \dn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    List of schemas
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Name  |    Owner
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--------+--------------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; public | enterprisedb
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(1 row)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Shows list of schemas. The &lt;code&gt;public&lt;/code&gt; schema owned by &lt;code&gt;enterprisedb&lt;/code&gt; should be the
+only one listed at this point.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# CREATE SCHEMA IF NOT EXISTS user1 AUTHORIZATION user1;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE SCHEMA
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# CREATE SCHEMA IF NOT EXISTS user3 AUTHORIZATION user3;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE SCHEMA
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Creates a schema &lt;code&gt;user1&lt;/code&gt; owned by the user/role &lt;code&gt;user1&lt;/code&gt; and the same for &lt;code&gt;user3&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# \dn
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    List of schemas
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Name  |    Owner
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--------+--------------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; public | enterprisedb
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; user1  | user1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; user3  | user3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(3 rows)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The list of schemas should now include &lt;code&gt;user1&lt;/code&gt; and &lt;code&gt;user3&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# \c db1 user3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Password for user user3:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;psql (13.10.14, server 13.10.14)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;You are now connected to database &amp;#34;db1&amp;#34; as user &amp;#34;user3&amp;#34;.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Connects to &lt;code&gt;db1&lt;/code&gt; as &lt;code&gt;user3&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; CREATE TABLE t1(i varchar);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE TABLE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; INSERT INTO t1 values(&amp;#39;this is user3 data in t1&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INSERT 0 1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Creates table and inserts a row.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; \dt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       List of relations
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; Schema | Name | Type  | Owner
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--------+------+-------+-------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; user3  | t1   | table | user3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(1 row)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; \c db1 user1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Password for user user1:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;psql (13.10.14, server 13.10.14)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;You are now connected to database &amp;#34;db1&amp;#34; as user &amp;#34;user1&amp;#34;.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; create table t1(i varchar);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE TABLE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; create table t2(i varchar);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;CREATE TABLE
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; INSERT INTO t1 values(&amp;#39;this is user1 data in table t1&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INSERT 0 1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; INSERT INTO t2 values(&amp;#39;this is user1 data in table t2&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INSERT 0 1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=&amp;gt; \dt
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       List of relations
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; Schema | Name | Type  | Owner
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--------+------+-------+-------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; user1  | t1   | table | user1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; user1  | t2   | table | user1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(1 row)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similar actions connected as &lt;code&gt;user1&lt;/code&gt;. Notice how the two &lt;code&gt;t1&lt;/code&gt; tables do not
+interfere because they exists in separate schemas.&lt;/p&gt;
+
+&lt;h2 id=&#34;schema-search-path&#34;&gt;Schema search path&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#schema-search-path&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;p&gt;The schema search path determines which schemas are searched for matching table
+names. It is used when fully qualified object names are not used in a query.&lt;/p&gt;
+&lt;p&gt;Example: The following statement will find the first &lt;code&gt;employee&lt;/code&gt; table from the
+schemas listed in the search path.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SELECT * FROM employee;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Default search path. Schema &lt;code&gt;$user&lt;/code&gt; will automatically be replaced with the
+current user.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;db1=# SHOW search_path;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   search_path
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-----------------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &amp;#34;$user&amp;#34;, public
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(1 row)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setting the search path.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SET search_path TO schema1, schema2, public
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">EDB</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-schemas/</guid>
+                <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>EDB Postgres Enterprise Manager</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-pem/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;common-connection-problems&#34;&gt;Common connection problems&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#common-connection-problems&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Could not connect to Server - Connection refused
+&lt;ul&gt;
+&lt;li&gt;This error occurs when either the database server isn&amp;rsquo;t running or the
+server isn&amp;rsquo;t configured to accept external TCP/IP connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FATAL - no ph_hba.conf entry
+&lt;ul&gt;
+&lt;li&gt;This means your server can be contacted over the network, but is not
+configured to accept the connection. Your client is not detected as a legal user
+for the database:wq&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">EDB</category>
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/pem">PEM</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-pem/</guid>
+                <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>EDB User Profile Management</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-user-profiles/</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;user-profiles-password-attributes&#34;&gt;User profiles (password attributes)&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#user-profiles-password-attributes&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;A profile is a named set of password attributes&lt;/li&gt;
+&lt;li&gt;User profiles can be used to manage account status and password expiration&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;default&lt;/code&gt; profile is assigned to all users&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;User profiles provide the following security features&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Attribute&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Value&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;FAILED_LOGIN_ATTEMPTS&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_LOCK_TIME&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_LIFE_TIME&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_GRACE_TIME&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_REUSE_TIME&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_REUSE_MAX&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_GRACE_TIME&lt;/td&gt;
+&lt;td&gt;UNLIMITED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PASSWORD_VERIFY_FUNCTION&lt;/td&gt;
+&lt;td&gt;NULL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;view-a-user-profile&#34;&gt;View a user profile&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#view-a-user-profile&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edb=# select * from dba_profiles
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;where profile=&amp;#39;DEFAULT&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; profile |      resource_name       | resource_type |   limit   | common
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---------+--------------------------+---------------+-----------+--------
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | FAILED_LOGIN_ATTEMPTS    | PASSWORD      | UNLIMITED | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_ALLOW_HASHED    | PASSWORD      | YES       | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_GRACE_TIME      | PASSWORD      | UNLIMITED | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_LIFE_TIME       | PASSWORD      | UNLIMITED | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_LOCK_TIME       | PASSWORD      | UNLIMITED | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_REUSE_MAX       | PASSWORD      | UNLIMITED | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_REUSE_TIME      | PASSWORD      | UNLIMITED | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; DEFAULT | PASSWORD_VERIFY_FUNCTION | PASSWORD      | NULL      | NO
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(8 rows)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories/notes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags/edb">EDB</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-user-profiles/</guid>
+                <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+    </channel>
+</rss>
+
+

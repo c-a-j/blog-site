@@ -1,1 +1,2 @@
-baseURL = 'https://c-a-j.github.io'
+baseURL = 'https://code.fs.usda.gov/pages/clint-jordan/site/'
+publishDir = 'docs'

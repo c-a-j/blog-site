@@ -96,9 +96,7 @@ a good example, feel free to organize and name sessions however you prefer.
 
 Now your session window might look something like this:
 
-{{< rawhtml >}}
-<img src="/images/superputty-session-struct.png">
-{{< /rawhtml >}}
+![session struct](/images/superputty-session-struct.png)
 
 #### 2.1.2 Clean up PuTTY profiles
 
@@ -124,9 +122,7 @@ PuTTY Configuration**.
 After you have cleaned up, your PuTTY Configuration window should look like
 this:
 
-{{< rawhtml >}}
-<img src="/images/fresh-putty.png">
-{{< /rawhtml >}}
+![fresh putty](/images/fresh-putty.png)
 
 If you prefer to have the terminal styled differently depending on the host or
 type of work being performed, just save a few more general profiles. For
@@ -136,10 +132,7 @@ starting with the default. After doing this the PuTTY configuration window would
 look like the screenshot below and there will be four different profiles to
 choose from in SuperPuTTY.
 
-{{< rawhtml >}}
-<img src="/images/custom-putty.png">
-{{< /rawhtml >}}
-
+![custom putty](/images/custom-putty.png)
 
 ## 3. Set up CAPI authentication
 
