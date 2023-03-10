@@ -1499,119 +1499,119 @@ div.highlight {   /* .. For lang identifiers recognized by Chroma, apply to the 
    the pygmentize generated CSS file also needs to be generated;
    see static/css/pygmentize.css.
 */
-[data-lang]::before { 
-    font-size: 9pt;
-    color: var(--theme-color); 
-    background: var(--theme-color-light); 
-    /* When changing the below padding, adjust the padding-top in the "pre" rule */ 
-    padding: 0.25em 0.5em;       /* top/bottom left/right */ 
-    position: absolute; 
-    top: 0px; 
-    right: 0px; 
-    /* content: attr(data-lang); */ 
-    /* Above is a short hand for the below explicit content specification, 
-       though you lose the control on letter casing. */ 
-} 
+/* [data-lang]::before { 
+/*     font-size: 9pt;
+/*     color: var(--theme-color); 
+/*     background: var(--theme-color-light); 
+/*     /* When changing the below padding, adjust the padding-top in the "pre" rule */ 
+/*     padding: 0.25em 0.5em;       /* top/bottom left/right */ 
+/*     position: absolute; 
+/*     top: 0px; 
+/*     right: 0px; 
+/*     /* content: attr(data-lang); */ 
+/*     /* Above is a short hand for the below explicit content specification, 
+/*        though you lose the control on letter casing. */ 
+/* } 
 
 /* https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages */
 /* Below, the 'pre' qualifier is needed because we want the lang
    identifier only for code blocks, not inline src blocks. */
-pre .language-C::before                { content: 'C'; }
-pre .language-D::before                { content: 'D'; }
-pre .language-J::before                { content: 'J'; }
-pre .language-R::before                { content: 'R'; }
-pre .language-abc::before              { content: 'ABC'; }
-pre .language-ada::before              { content: 'Ada'; }
-pre .language-ash::before              { content: 'ash'; }
-pre .language-asm::before              { content: 'Assembler'; }
-pre .language-asymptote::before        { content: 'Asymptote'; }
-pre .language-awk::before              { content: 'Awk'; }
-pre .language-bash::before             { content: 'bash'; }
-pre .language-calc::before             { content: 'Emacs Calc'; }
-pre .language-caml::before             { content: 'Caml'; }
-pre .language-clojure::before          { content: 'Clojure'; }
-pre .language-cfg::before              { content: 'Conf'; }
-pre .language-coq::before              { content: 'Coq'; }
-pre .language-cpp::before              { content: 'C++'; }
-pre .language-csh::before              { content: 'csh'; }
-pre .language-css::before              { content: 'CSS'; }
-pre .language-dash::before             { content: 'dash'; }
-pre .language-delphi::before           { content: 'Delphi'; }
-pre .language-ditaa::before            { content: 'ditaa'; }
-pre .language-dot::before              { content: 'Graphviz'; }
-pre .language-ebnf2ps::before          { content: 'ebfn2ps'; }
-pre .language-el::before               { content: 'Emacs Lisp'; }
-pre .language-elisp::before            { content: 'Emacs Lisp'; }
-pre .language-emacs-lisp::before       { content: 'Emacs Lisp'; }
-pre .language-emacs::before            { content: 'Emacs Lisp'; }
-pre .language-forth::before            { content: 'Forth'; }
-pre .language-fortran::before          { content: 'Fortran'; }
-pre .language-gnuplot::before          { content: 'gnuplot'; }
-pre .language-go::before               { content: 'Go'; }
-pre .language-go-html-template::before { content: 'Go Template'; }
-pre .language-go-text-template::before { content: 'Go Template'; }
-pre .language-groovy::before           { content: 'Groovy'; }
-pre .language-haskell::before          { content: 'Haskell'; }
-pre .language-hledger::before          { content: 'hledger'; }
-pre .language-html::before             { content: 'HTML'; }
-pre .language-idl::before              { content: 'IDL'; }
-pre .language-io::before               { content: 'IO'; }
-pre .language-java::before             { content: 'Java'; }
-pre .language-js::before               { content: 'Javascript'; }
-pre .language-json::before             { content: 'JSON'; }
-pre .language-ksh::before              { content: 'ksh'; }
-pre .language-latex::before            { content: 'LaTeX'; }
-pre .language-ledger::before           { content: 'Ledger'; }
-pre .language-lilypond::before         { content: 'Lilypond'; }
-pre .language-lisp::before             { content: 'Lisp'; }
-pre .language-lua::before              { content: 'Lua'; }
-pre .language-makefile::before         { content: 'Makefile'; }
-pre .language-markdown::before         { content: 'Markdown'; }
-pre .language-matlab::before           { content: 'MATLAB'; }
-pre .language-maxima::before           { content: 'Maxima'; }
-pre .language-md::before               { content: 'Markdown'; }
-pre .language-mercury::before          { content: 'Mercury'; }
-pre .language-metapost::before         { content: 'MetaPost'; }
-pre .language-mksh::before             { content: 'mksh'; }
-pre .language-modula-2::before         { content: 'Modula-2'; }
-pre .language-mscgen::before           { content: 'Mscgen'; }
-pre .language-nxml::before             { content: 'XML'; }
-pre .language-nim::before              { content: 'Nim'; }
-pre .language-ocaml::before            { content: 'Objective Caml'; }
-pre .language-octave::before           { content: 'Octave'; }
-pre .language-org::before              { content: 'Org'; }
-pre .language-oz::before               { content: 'OZ'; }
-pre .language-pascal::before           { content: 'Pascal'; }
-pre .language-perl::before             { content: 'Perl'; }
-pre .language-picolisp::before         { content: 'Pico Lisp'; }
-pre .language-plain-tex::before        { content: 'Plain TeX'; }
-pre .language-plantuml::before         { content: 'PlantUML'; }
-pre .language-posh::before             { content: 'posh'; }
-pre .language-processing::before       { content: 'Processing.js'; }
-pre .language-prolog::before           { content: 'Prolog'; }
-pre .language-ps::before               { content: 'PostScript'; }
-pre .language-python::before           { content: 'Python'; }
-pre .language-ruby::before             { content: 'Ruby'; }
-pre .language-sass::before             { content: 'Sass'; }
-pre .language-scala::before            { content: 'Scala'; }
-pre .language-scheme::before           { content: 'Scheme'; }
-pre .language-screen::before           { content: 'Gnu Screen'; }
-pre .language-sed::before              { content: 'Sed'; }
-pre .language-sh::before               { content: 'bash'; }
-pre .language-shell::before            { content: 'Shell'; }
-pre .language-simula::before           { content: 'Simula'; }
-pre .language-sql::before              { content: 'SQL'; }
-pre .language-sqlite::before           { content: 'SQLite'; }
-pre .language-sv::before               { content: 'SystemVerilog'; }
-pre .language-systemverilog::before    { content: 'SystemVerilog'; }
-pre .language-tcl::before              { content: 'tcl'; }
-pre .language-tcsh::before             { content: 'tcsh'; }
-pre .language-tex::before              { content: 'TeX'; }
-pre .language-toml::before             { content: 'TOML'; }
-pre .language-verilog::before          { content: 'Verilog'; }
-pre .language-vhdl::before             { content: 'VHDL'; }
-pre .language-xml::before              { content: 'XML'; }
-pre .language-yaml::before             { content: 'YAML'; }
+/* pre .language-C::before                { content: 'C'; }
+/* pre .language-D::before                { content: 'D'; }
+/* pre .language-J::before                { content: 'J'; }
+/* pre .language-R::before                { content: 'R'; }
+/* pre .language-abc::before              { content: 'ABC'; }
+/* pre .language-ada::before              { content: 'Ada'; }
+/* pre .language-ash::before              { content: 'ash'; }
+/* pre .language-asm::before              { content: 'Assembler'; }
+/* pre .language-asymptote::before        { content: 'Asymptote'; }
+/* pre .language-awk::before              { content: 'Awk'; }
+/* pre .language-bash::before             { content: 'bash'; }
+/* pre .language-calc::before             { content: 'Emacs Calc'; }
+/* pre .language-caml::before             { content: 'Caml'; }
+/* pre .language-clojure::before          { content: 'Clojure'; }
+/* pre .language-cfg::before              { content: 'Conf'; }
+/* pre .language-coq::before              { content: 'Coq'; }
+/* pre .language-cpp::before              { content: 'C++'; }
+/* pre .language-csh::before              { content: 'csh'; }
+/* pre .language-css::before              { content: 'CSS'; }
+/* pre .language-dash::before             { content: 'dash'; }
+/* pre .language-delphi::before           { content: 'Delphi'; }
+/* pre .language-ditaa::before            { content: 'ditaa'; }
+/* pre .language-dot::before              { content: 'Graphviz'; }
+/* pre .language-ebnf2ps::before          { content: 'ebfn2ps'; }
+/* pre .language-el::before               { content: 'Emacs Lisp'; }
+/* pre .language-elisp::before            { content: 'Emacs Lisp'; }
+/* pre .language-emacs-lisp::before       { content: 'Emacs Lisp'; }
+/* pre .language-emacs::before            { content: 'Emacs Lisp'; }
+/* pre .language-forth::before            { content: 'Forth'; }
+/* pre .language-fortran::before          { content: 'Fortran'; }
+/* pre .language-gnuplot::before          { content: 'gnuplot'; }
+/* pre .language-go::before               { content: 'Go'; }
+/* pre .language-go-html-template::before { content: 'Go Template'; }
+/* pre .language-go-text-template::before { content: 'Go Template'; }
+/* pre .language-groovy::before           { content: 'Groovy'; }
+/* pre .language-haskell::before          { content: 'Haskell'; }
+/* pre .language-hledger::before          { content: 'hledger'; }
+/* pre .language-html::before             { content: 'HTML'; }
+/* pre .language-idl::before              { content: 'IDL'; }
+/* pre .language-io::before               { content: 'IO'; }
+/* pre .language-java::before             { content: 'Java'; }
+/* pre .language-js::before               { content: 'Javascript'; }
+/* pre .language-json::before             { content: 'JSON'; }
+/* pre .language-ksh::before              { content: 'ksh'; }
+/* pre .language-latex::before            { content: 'LaTeX'; }
+/* pre .language-ledger::before           { content: 'Ledger'; }
+/* pre .language-lilypond::before         { content: 'Lilypond'; }
+/* pre .language-lisp::before             { content: 'Lisp'; }
+/* pre .language-lua::before              { content: 'Lua'; }
+/* pre .language-makefile::before         { content: 'Makefile'; }
+/* pre .language-markdown::before         { content: 'Markdown'; }
+/* pre .language-matlab::before           { content: 'MATLAB'; }
+/* pre .language-maxima::before           { content: 'Maxima'; }
+/* pre .language-md::before               { content: 'Markdown'; }
+/* pre .language-mercury::before          { content: 'Mercury'; }
+/* pre .language-metapost::before         { content: 'MetaPost'; }
+/* pre .language-mksh::before             { content: 'mksh'; }
+/* pre .language-modula-2::before         { content: 'Modula-2'; }
+/* pre .language-mscgen::before           { content: 'Mscgen'; }
+/* pre .language-nxml::before             { content: 'XML'; }
+/* pre .language-nim::before              { content: 'Nim'; }
+/* pre .language-ocaml::before            { content: 'Objective Caml'; }
+/* pre .language-octave::before           { content: 'Octave'; }
+/* pre .language-org::before              { content: 'Org'; }
+/* pre .language-oz::before               { content: 'OZ'; }
+/* pre .language-pascal::before           { content: 'Pascal'; }
+/* pre .language-perl::before             { content: 'Perl'; }
+/* pre .language-picolisp::before         { content: 'Pico Lisp'; }
+/* pre .language-plain-tex::before        { content: 'Plain TeX'; }
+/* pre .language-plantuml::before         { content: 'PlantUML'; }
+/* pre .language-posh::before             { content: 'posh'; }
+/* pre .language-processing::before       { content: 'Processing.js'; }
+/* pre .language-prolog::before           { content: 'Prolog'; }
+/* pre .language-ps::before               { content: 'PostScript'; }
+/* pre .language-python::before           { content: 'Python'; }
+/* pre .language-ruby::before             { content: 'Ruby'; }
+/* pre .language-sass::before             { content: 'Sass'; }
+/* pre .language-scala::before            { content: 'Scala'; }
+/* pre .language-scheme::before           { content: 'Scheme'; }
+/* pre .language-screen::before           { content: 'Gnu Screen'; }
+/* pre .language-sed::before              { content: 'Sed'; }
+/* pre .language-sh::before               { content: 'bash'; }
+/* pre .language-shell::before            { content: 'Shell'; }
+/* pre .language-simula::before           { content: 'Simula'; }
+/* pre .language-sql::before              { content: 'SQL'; }
+/* pre .language-sqlite::before           { content: 'SQLite'; }
+/* pre .language-sv::before               { content: 'SystemVerilog'; }
+/* pre .language-systemverilog::before    { content: 'SystemVerilog'; }
+/* pre .language-tcl::before              { content: 'tcl'; }
+/* pre .language-tcsh::before             { content: 'tcsh'; }
+/* pre .language-tex::before              { content: 'TeX'; }
+/* pre .language-toml::before             { content: 'TOML'; }
+/* pre .language-verilog::before          { content: 'Verilog'; }
+/* pre .language-vhdl::before             { content: 'VHDL'; }
+/* pre .language-xml::before              { content: 'XML'; }
+/* pre .language-yaml::before             { content: 'YAML'; }
 
 /* * Navigation Bar */
 .nav-collapse.disable-pointer-events {
@@ -2357,3 +2357,8 @@ margins, but only in a pinch, and px some times for borders.
 /* eval: (outline-minor-mode 1) */
 /* eval: (auto-complete-mode -1) */
 /* End: */
+
+
+.command-line span.token.output {
+        user-select: none;
+}

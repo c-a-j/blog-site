@@ -16,8 +16,8 @@
             data-prompt="{{ .Get "prompt" }}"
             data-output="{{ .Get "output" }}"
             data-filter-output="(out)"
-            data-continuation-str="\"
-            data-prismjs-copy="Скопирвать"
+            data-continuation-str="{{ .Get "cont-str" }}"
+            date-continuation-prompt="{{ .Get "cont-prompt" }}"
             >
 
             <code class="language-{{ .Get "lang" }}">
