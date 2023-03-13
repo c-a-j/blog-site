@@ -48,9 +48,9 @@
 {{ end }}
 {{ $hugo_version_string := printf `<span class="nobr">Hugo %s</span>` $hugo_version_string_1 }}
 
-<p class="generated">
-    {{ printf "Generated using %s %s + %s%s" $ox_hugo_string $refined_theme_string $hugo_version_string $source_string | safeHTML }}
-</p>
+<!-- <p class="generated"> -->
+<!--     {{ printf "Generated using %s %s + %s%s" $ox_hugo_string $refined_theme_string $hugo_version_string $source_string | safeHTML }} -->
+<!-- </p> -->
 
 <p>
     {{ with site.Params.footer }}

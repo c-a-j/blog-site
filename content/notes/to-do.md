@@ -16,6 +16,7 @@ draft = true
 
 ## Update footer
 * I don't think the current footer is appropriate for a government website
+* Temporarily removed - commented lines 51-53 in `layouts/partials/footer.html`
 
 ## Change second and third level bullet characters
 * first bullet solid circle
