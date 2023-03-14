@@ -23,10 +23,19 @@ draft = true
 * second bullet hollow
 * third bullet dash
 
-## change header before characters and link characters
+## Change header before characters and link characters
 * `assets/css/refined.css`, lines 821 - 836
 * find a way to enable automatic header numbering for h2, h3, h4, and h5 
     * **not** globally, though
+
+## Find a way to enable automatic header numbering for h2, h3, h4, and h5 
+* **not** globally
+
+## Change font size of h4 and h5
+### h3
+#### h4
+##### h5
+Regular text is larger than h5. Should be equal or larger.
 
 ## Implement Prism code blocks (maybe)
 * kind of got it, didn't get it to a place that was better than chroma
