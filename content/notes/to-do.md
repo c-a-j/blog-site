@@ -7,16 +7,14 @@ lastmod = "2023-03-07"
 tags = ["to-do"]
 categories = ["notes"]
 draft = true
+autonumber = true
 +++
 
 
 ## Get rid of "link to text" feature
 * got it, but there's still leftover junk
+    * commented lined 2113-2132 in `assets/css/refined.css`
 * grep fragmentions
-
-## Update footer
-* I don't think the current footer is appropriate for a government website
-* Temporarily removed - commented lines 51-53 in `layouts/partials/footer.html`
 
 ## Change second and third level bullet characters
 * first bullet solid circle
@@ -30,6 +28,11 @@ draft = true
 
 ## Find a way to enable automatic header numbering for h2, h3, h4, and h5 
 * **not** globally
+* getting close
+* created `static/css/autonumber.css` to override default settings with
+     `autonumber = true` in font matter
+* most header settings are in `assets/css/refined.css` from 744-on
+* now need to find a way to make numbers appear in navbar on the right
 
 ## Change font size of h4 and h5
 ### h3

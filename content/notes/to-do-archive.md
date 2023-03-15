@@ -7,6 +7,7 @@ lastmod = "2023-03-10"
 tags = ["to-do", "archives"]
 categories = ["notes"]
 draft = true
+number-headers = true
 +++
 
 ## set in-line code highlight color
@@ -30,3 +31,6 @@ now the fix is this...
 ```text
 find . -type f -exec sed -i 's|src="/images/|src="/pages/clint-jordan/site/images/|g' {} +
 ```
+
+## Update footer
+* Temporarily removed - commented lines 51-53 in `layouts/partials/footer.html`
