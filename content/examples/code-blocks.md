@@ -1,11 +1,11 @@
 +++
-title = "Examples"
+title = "Code Blocks"
 author = ["Clint Jordan"]
 description = " "
-date = 2020-01-01
-lastmod = "2023-03-08"
-tags = ["examples"]
-categories = ["notes"]
+date = 2023-03-15
+lastmod = " "
+tags = ["code blocks"]
+categories = ["examples"]
 draft = true
 +++
 

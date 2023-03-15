@@ -1,5 +1,5 @@
 +++
-title = "some notes"
+title = "notes template"
 author = ["Clint Jordan"]
 description = "description"
 date = "2020-01-01"

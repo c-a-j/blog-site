@@ -1,13 +1,13 @@
 +++
-title = "To-do items"
+title = "To-do template"
 author = ["Clint Jordan"]
 description = " "
 date = 2020-01-01
-lastmod = "2023-03-07"
+lastmod = ""
 tags = ["to-do"]
 categories = ["notes"]
 draft = true
-autonumber = true
+autonumber = false
 +++
 
 
@@ -16,29 +16,6 @@ autonumber = true
     * commented lined 2113-2132 in `assets/css/refined.css`
 * grep fragmentions
 
-## Change second and third level bullet characters
-* first bullet solid circle
-* second bullet hollow
-* third bullet dash
-
-## Change header before characters and link characters
-* `assets/css/refined.css`, lines 821 - 836
-* find a way to enable automatic header numbering for h2, h3, h4, and h5 
-    * **not** globally, though
-
-## Find a way to enable automatic header numbering for h2, h3, h4, and h5 
-* **not** globally
-* getting close
-* created `static/css/autonumber.css` to override default settings with
-     `autonumber = true` in font matter
-* most header settings are in `assets/css/refined.css` from 744-on
-* now need to find a way to make numbers appear in navbar on the right
-
-## Change font size of h4 and h5
-### h3
-#### h4
-##### h5
-Regular text is larger than h5. Should be equal or larger.
 
 ## Implement Prism code blocks (maybe)
 * kind of got it, didn't get it to a place that was better than chroma
@@ -79,10 +56,3 @@ Regular text is larger than h5. Should be equal or larger.
 ## Clean up `/notes/edb-schemas.md`
 * code blocks should be placed below description
 * incorporate `code-show-user` shortcode
-
-## Impliment alert, warning, etc shortcodes
-> These are taken from the docsy template.
-{{< alert >}}This is an alert.{{< /alert >}}
-{{< warning >}}This is a warning.{{< /warning >}}
-
-
