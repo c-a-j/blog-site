@@ -1147,6 +1147,7 @@ ol>li::before {
 
 .masthead {
     font-family: var(--mono); /* Monospace fonts for the masthead */
+    color: var(--theme-site-title-color);
     font-weight: normal;
     padding-top: 1rem;
     padding-bottom: 1rem;

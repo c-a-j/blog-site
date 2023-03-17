@@ -4,7 +4,7 @@ author = ["Clint Jordan"]
 description = " "
 date = "2023-03-06"
 lastmod = "2023-03-14"
-tags = ["edb","sql protect"]
+tags = ["edb"]
 categories = ["notes"]
 draft = false
 +++

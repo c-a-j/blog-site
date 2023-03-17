@@ -23,4 +23,9 @@ Issues
 * not a big fan of the asterisks, look into alternatives
 
 
+Solutions
+* Changed header color
+    * `heading_color = "#d4d5d6"` in `data/theme.toml`
+* Changed body font color
+    * `body_color = "#c1c3c5"` in `data/theme.toml`
 
