@@ -1,0 +1,3 @@
+baseURL = '/'
+publishDir = 'docs-dev'
+contentDir = 'content-dev'
