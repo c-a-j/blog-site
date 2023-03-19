@@ -20,8 +20,12 @@ Find a way to enable automatic header numbering for h2, h3, h4, and h5
 ### h3
 #### h4
 ##### h5
+###### h6
 
-Persisting issues
+Issues
 * numbering doesn't appear in navbar
 * need method to disable for appendices
 * need more space between numbers and periods
+
+Solutions
+* adjusted number spacing in `static/css/autonumber.css`

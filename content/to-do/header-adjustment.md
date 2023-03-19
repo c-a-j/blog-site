@@ -4,7 +4,7 @@ author = ["Clint Jordan"]
 description = " "
 date = 2023-03-15
 lastmod = ""
-tags = ["in-progress"]
+tags = ["complete"]
 categories = ["to-do"]
 draft = true
 autonumber = false
@@ -16,6 +16,7 @@ autonumber = false
 ### h3
 #### h4
 ##### h5
+###### h6 this is h6
 
 Issues
 * regular text is larger than h5. Should be equal or larger.
@@ -28,4 +29,5 @@ Solutions
     * `heading_color = "#d4d5d6"` in `data/theme.toml`
 * Changed body font color
     * `body_color = "#c1c3c5"` in `data/theme.toml`
+* Changed header sizes on lines 643-662 in `assets/css/refined.css`
 

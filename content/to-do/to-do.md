@@ -1,11 +1,11 @@
 +++
-title = "To-do template"
+title = "Still needs organization"
 author = ["Clint Jordan"]
 description = " "
 date = 2020-01-01
 lastmod = ""
-tags = ["to-do"]
-categories = ["notes"]
+tags = ["not started"]
+categories = ["to-do"]
 draft = true
 autonumber = false
 +++
@@ -48,11 +48,3 @@ autonumber = false
     * possible solutions
         * find way to enable this inside prism shortcodes
         * need to reposition copy button or simply live without it
-
-## Fix broken links in github build
-* temporary solution in the archives
-* this is remaining bc process still needs improvement
-
-## Clean up `/notes/edb-schemas.md`
-* code blocks should be placed below description
-* incorporate `code-show-user` shortcode

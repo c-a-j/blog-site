@@ -646,20 +646,19 @@ h2 {                            /* Top-most level heading in a post body */
 }
 h3 {
     margin-top: 1.5rem;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 h4 {
     margin-top: 1.2rem;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 h5 {
     margin-top: 1rem;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 h6 {
     margin-top: 1rem;
-    font-size: 1em;
-    text-transform: uppercase;
+    font-size: 1.0em;
 }
 h2,
 h3,
@@ -793,6 +792,17 @@ blockquote {
     color: var(--theme-block-quote-font-color);
     border-left: 2px solid var(--theme-hl1-color); /* Vertical line on the left */
 }
+
+blockquote.alert {
+    color: var(--theme-block-quote-font-color);
+    border-left: 2px solid var(--theme-alert-color); /* Vertical line on the left */
+}
+
+blockquote.warning {
+    color: var(--theme-block-quote-font-color);
+    border-left: 2px solid var(--theme-warning-color); /* Vertical line on the left */
+}
+
 
 /* *** Headline Hashes */
 .headline-hash,
@@ -1054,15 +1064,29 @@ li::before {
 
 /* *** Unordered lists */
 ul li {
+    list-style-type: disc;
+}
+ul ul li {
+    list-style-type: circle;
+}
+ul ul ul li {
     list-style-type: none;
 }
 ul li::before {
     font-family: var(--symbola);
+    font-size: 1em;
+    margin-top: 0.35em;
+}
+ul ul li::before {
+    font-family: var(--symbola);
     font-size: 0.7em;
     margin-top: 0.35em;
-    content: '○'; /* To get bullets similar to list-style-type: circle; Unicode 0x25cb WHITE CIRCLE */
-    /* content: '•'; /\* For a round bullet; Unicode 0x2022 BULLET *\/ */
-    /* content: '■'; /\* For a square bullet; Unicode 0x25a0 BLACK SQUARE *\/ */
+}
+ul ul ul li::before {
+    font-family: var(--symbola);
+    font-size: 1.5em;
+    margin-top: -0.3em;
+    content: '-';
 }
 
 /* Don't put those white circle bullets for these lists */
