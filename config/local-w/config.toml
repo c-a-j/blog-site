@@ -1,7 +1,9 @@
-title = 'Clint A Jordan'
 baseURL = '/'
-publishDir = 'docs-p'
-contentDir = 'content-p'
+publishDir = 'docs-w'
+contentDir = 'content-w'
+
+
+title = "Clint A Jordan"
 
 [module]
   [module.hugoVersion]
@@ -19,8 +21,8 @@ contentDir = 'content-p'
 [Params]
   # https://github.com/tummychow/lanyon-hugo/issues/2#issuecomment-253274278
   # Go date formats: https://golang.org/pkg/time/#pkg-constants
-    mainSections = [ "home", "posts", "gallery", "notes" ]
-    tagLine = "a work in progres"
+    mainSections = [ "home", "posts", "docs", "notes", "examples", "to-do" ]
+    tagLine = "USDA FS CIO EDBA"
     dateform = "Mon Jan 2, 2006"
 
   themecolorbase = "dark" # Valid values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta", "brown"

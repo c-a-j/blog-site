@@ -1,0 +1,3 @@
+baseURL = '/'
+publishDir = 'docs-p'
+contentDir = 'content-p'
