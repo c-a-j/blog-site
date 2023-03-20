@@ -1,10 +1,10 @@
 +++
-title = "To-do template"
+title = "Make dev page"
 author = ["Clint Jordan"]
 description = " "
-date = 2020-01-01
+date = 2023-03-19
 lastmod = ""
-tags = ["not started"]
+tags = ["in progress"]
 categories = ["to-do"]
 draft = true
 autonumber = false

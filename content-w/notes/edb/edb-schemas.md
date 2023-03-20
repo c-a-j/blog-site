@@ -39,81 +39,77 @@ schema can be dropped instead of dropping all its objects individually.
 
 Below is an example of creating a new database, new users, and new db schemas.
 
-```text
-edb=#
-```
-
-```text
-edb=# CREATE USER user1 PASSWORD '1';
-CREATE ROLE
-
-edb=# CREATE USER user2 PASSWORD '2';
-CREATE ROLE
-
-edb=# CREATE USER user3 PASSWORD '3';
-CREATE ROLE
-```
-
-Creates user1, user2, and user3. Users, groups, and roles are the same thing in
+Create user1, user2, and user3. Users, groups, and roles are the same thing in
 PostgreSQL, with the only difference being that users have permission to log in
 by default. The CREATE USER and CREATE GROUP statements are actually aliases for
 the CREATE ROLE statement.
 
-```text
+{{< code-show-user  lang="sql" prompt="edb=#" output="2,3,5,6,8" cont-str="" cont-prompt=">" >}}
+CREATE USER user1 PASSWORD '1';
+CREATE ROLE
+
+CREATE USER user2 PASSWORD '2';
+CREATE ROLE
+
+CREATE USER user3 PASSWORD '3';
+CREATE ROLE
+{{< /code-show-user >}}
+
+Create a database called db1. It is owned by the superuser, enterprisedb.
+
+{{< code-show-user  lang="sql" prompt="edb=#" output="2" cont-str="" cont-prompt=">" >}}
 edb=# CREATE DATABASE db1;
 CREATE DATABASE
-```
+{{< /code-show-user >}}
 
-Creates a database called db1. It is owned by the superuser, enterprisedb.
+Revoke connect privilege from everyone excluding the owner and superuser(s).
 
-
-```text
-edb=# REVOKE CONNECT ON DATABASE db1 FROM public;
+{{< code-show-user  lang="sql" prompt="edb=#" output="2" cont-str="" cont-prompt=">" >}}
+REVOKE CONNECT ON DATABASE db1 FROM public;
 REVOKE
-```
+{{< /code-show-user >}}
 
-This revokes connect privilege from everyone excluding the owner and
-superuser(s).
+Grant connect privilege to `user1` and `user3`;
 
-```text
-edb=# GRANT CONNECT ON DATABASE db1 TO user1, user3;
+{{< code-show-user  lang="sql" prompt="edb=#" output="2" cont-str="" cont-prompt=">" >}}
+GRANT CONNECT ON DATABASE db1 TO user1, user3;
 GRANT
-```
+{{< /code-show-user >}}
 
-Grants connect privilege to `user1` and `user3`;
+Connect to `db1` in order to create schemas.
 
-```text
-edb=# \c db1
+{{< code-show-user  lang="sql" prompt="edb=#" output="2,3" cont-str="" cont-prompt=">" >}}
+\c db1
 (psql 13.4.8, server 13.4.8)
 You are now connected to database "db1" as user "enterprisedb".
-```
+{{< /code-show-user >}}
 
-Connects to `db1` in order to create schemas.
+Show list of schemas. The `public` schema owned by `enterprisedb` should be the
+only one listed at this point.
 
-```text
-db1=# \dn
+{{< code-show-user  lang="sql" prompt="db1=#" output="2-10" cont-str="" cont-prompt=">" >}}
+\dn
     List of schemas
   Name  |    Owner
 --------+--------------
  public | enterprisedb
 (1 row)
-```
+{{< /code-show-user >}}
 
-Shows list of schemas. The `public` schema owned by `enterprisedb` should be the
-only one listed at this point.
+Create a schema `user1` owned by the user/role `user1` and the same for `user3`. 
 
-```text
-db1=# CREATE SCHEMA IF NOT EXISTS user1 AUTHORIZATION user1;
+{{< code-show-user  lang="sql" prompt="db1=#" output="2,3,5" cont-str="" cont-prompt=">" >}}
+CREATE SCHEMA IF NOT EXISTS user1 AUTHORIZATION user1;
 CREATE SCHEMA
 
-db1=# CREATE SCHEMA IF NOT EXISTS user3 AUTHORIZATION user3;
+CREATE SCHEMA IF NOT EXISTS user3 AUTHORIZATION user3;
 CREATE SCHEMA
-```
+{{< /code-show-user >}}
 
-Creates a schema `user1` owned by the user/role `user1` and the same for `user3`. 
+The list of schemas should now include `user1` and `user3`.
 
-```text
-db1=# \dn
+{{< code-show-user  lang="sql" prompt="db1=#" output="2-10" cont-str="" cont-prompt=">" >}}
+\dn
     List of schemas
   Name  |    Owner
 --------+--------------
@@ -121,64 +117,63 @@ db1=# \dn
  user1  | user1
  user3  | user3
 (3 rows)
-```
+{{< /code-show-user >}}
 
-The list of schemas should now include `user1` and `user3`.
+Connect to `db1` as `user3`.
 
-```text
-db1=# \c db1 user3
+{{< code-show-user  lang="sql" prompt="db1=#" output="2-10" cont-str="" cont-prompt=">" >}}
+\c db1 user3
 Password for user user3:
 psql (13.10.14, server 13.10.14)
 You are now connected to database "db1" as user "user3".
-```
+{{< /code-show-user >}}
 
-Connects to `db1` as `user3`.
+Create a table and insert a row.
 
-```text
-db1=> CREATE TABLE t1(i varchar);
+{{< code-show-user  lang="sql" prompt="db1=>" output="2,3,5" cont-str="" cont-prompt=">" >}}
+CREATE TABLE t1(i varchar);
 CREATE TABLE
 
-db1=> INSERT INTO t1 values('this is user3 data in t1');
+INSERT INTO t1 values('this is user3 data in t1');
 INSERT 0 1
-```
+{{< /code-show-user >}}
 
-Creates table and inserts a row.
 
-```text
-db1=> \dt
+{{< code-show-user  lang="sql" prompt="db1=>" output="2-10" cont-str="" cont-prompt=">" >}}
+\dt
        List of relations
  Schema | Name | Type  | Owner
 --------+------+-------+-------
  user3  | t1   | table | user3
 (1 row)
-```
+{{< /code-show-user >}}
 
-```text
-db1=> \c db1 user1
+{{< code-show-user  lang="sql" prompt="db1=>" output="2-5,7-8,10-11,13-14,16-17,19-30" cont-str="" cont-prompt=">" >}}
+\c db1 user1
 Password for user user1:
 psql (13.10.14, server 13.10.14)
 You are now connected to database "db1" as user "user1".
 
-db1=> create table t1(i varchar);
+create table t1(i varchar);
 CREATE TABLE
 
-db1=> create table t2(i varchar);
+create table t2(i varchar);
 CREATE TABLE
 
-db1=> INSERT INTO t1 values('this is user1 data in table t1');
+INSERT INTO t1 values('this is user1 data in table t1');
 INSERT 0 1
 
-db1=> INSERT INTO t2 values('this is user1 data in table t2');
+INSERT INTO t2 values('this is user1 data in table t2');
 INSERT 0 1
 
-db1=> \dt
+\dt
        List of relations
  Schema | Name | Type  | Owner
 --------+------+-------+-------
  user1  | t1   | table | user1
  user1  | t2   | table | user1
 (1 row)
-```
+{{< /code-show-user >}}
 
 Similar actions connected as `user1`. Notice how the two `t1` tables do not
 interfere because they exists in separate schemas.
@@ -190,24 +185,24 @@ names. It is used when fully qualified object names are not used in a query.
 Example: The following statement will find the first `employee` table from the
 schemas listed in the search path.
 
-```text
+{{< code-show-user  lang="sql" prompt="db1=#" output="2-10" cont-str="" cont-prompt=">" >}}
 SELECT * FROM employee;
-```
+{{< /code-show-user >}}
 
 Default search path. Schema `$user` will automatically be replaced with the
 current user.
 
-```text
-db1=# SHOW search_path;
+{{< code-show-user  lang="sql" prompt="db1=#" output="2-10" cont-str="" cont-prompt=">" >}}
+SHOW search_path;
    search_path
 -----------------
  "$user", public
 (1 row)
-```
+{{< /code-show-user >}}
 
 Setting the search path.
 
-```text
-SET search_path TO schema1, schema2, public
-```
+{{< code-show-user  lang="sql" prompt="db1=#" output="2-10" cont-str="" cont-prompt=">" >}}
+SET search_path TO schema1, schema2, public;
+{{< /code-show-user >}}
 

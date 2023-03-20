@@ -21,7 +21,7 @@ title = "Clint A Jordan"
 [Params]
   # https://github.com/tummychow/lanyon-hugo/issues/2#issuecomment-253274278
   # Go date formats: https://golang.org/pkg/time/#pkg-constants
-    mainSections = [ "home", "posts", "docs", "notes", "examples", "to-do" ]
+    mainSections = [ "home", "posts", "docs", "notes" ]
     tagLine = "USDA FS CIO EDBA"
     dateform = "Mon Jan 2, 2006"
 

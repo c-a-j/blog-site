@@ -1,21 +1,14 @@
 +++
-title = "Still needs organization"
+title = "Prism code blocks"
 author = ["Clint Jordan"]
 description = " "
-date = 2020-01-01
+date = 2023-03-20
 lastmod = ""
 tags = ["not started"]
 categories = ["to-do"]
 draft = true
 autonumber = false
 +++
-
-
-## Get rid of "link to text" feature
-* got it, but there's still leftover junk
-    * commented lined 2113-2132 in `assets/css/refined.css`
-* grep fragmentions
-
 
 ## Implement Prism code blocks (maybe)
 * kind of got it, didn't get it to a place that was better than chroma
