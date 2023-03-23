@@ -1,7 +1,7 @@
 +++
 title = "notes template"
 author = ["Clint Jordan"]
-description = "description"
+description = " "
 date = "2020-01-01"
 lastmod = ""
 tags = ["template"]

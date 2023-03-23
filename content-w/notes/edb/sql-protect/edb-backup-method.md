@@ -1,9 +1,9 @@
 +++
-title = "SQL/Protect Testing"
+title = "SQL/Protect - importing into db clone"
 author = ["Clint Jordan"]
-description = "Migrating SQL/Protect data between clusters"
-date = "2023-03-06"
-lastmod = "2023-03-14"
+description = "Importing SQL/Protect data into a backup"
+date = "2023-03-22"
+lastmod = ""
 tags = ["edb","sql protect"]
 categories = ["notes"]
 draft = false
