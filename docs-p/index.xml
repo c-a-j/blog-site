@@ -1,0 +1,109 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>
+            
+            
+            Clint A Jordan</title>
+        <link>/</link>
+        <description>Recent content 
+            on Clint A Jordan</description>
+        
+        <lastBuildDate>Mon, 03 Apr 2023 17:18:04 -0600</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+            <atom:link href="/index.xml" rel="self" type="application/rss&#43;xml" />
+        
+            
+            <item>
+                <title>An ode to Arch-Linux</title>
+                <link>/posts/foo-barski/</link>
+                
+                
+                <description>&lt;blockquote&gt;It&amp;rsquo;s simply great&lt;/blockquote&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="/categories/unix">unix</category>
+                                 
+                                    <category domain="/categories/linux">Linux</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="/tags/arch-linux">Arch-Linux</category>
+                                
+                            
+                        
+                    
+                
+                <guid>/posts/foo-barski/</guid>
+                <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>this is starting to not suck</title>
+                <link>/notes/foo-barski/</link>
+                
+                
+                <description>&lt;blockquote&gt;Collection of &lt;code&gt;awk&lt;/code&gt; examples.&lt;/blockquote&gt;
+&lt;h1 id=&#34;h1&#34;&gt;h1&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#h1&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;
+
+
+
+&lt;h2 id=&#34;h2&#34;&gt;h2&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#h2&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;h3&#34;&gt;h3&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#h3&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+
+&lt;h4 id=&#34;h4&#34;&gt;h4&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#h4&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+
+
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="/categories/unix">unix</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="/tags/ramblings">ramblings</category>
+                                
+                            
+                        
+                    
+                
+                <guid>/notes/foo-barski/</guid>
+                <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+            </item>
+        
+    </channel>
+</rss>
+
+

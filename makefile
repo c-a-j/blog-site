@@ -18,12 +18,15 @@ work:
 	make github-w && make clean-w
 
 github-w: 
-	hugo --environment github
+	hugo --environment github-w
 	rsync -avu --delete\
 	   --exclude ".git*"\
-	   ~/hugo/work-blog-site/docs/ ~/hugo/site/
+	   ~/hugo/blog-site/docs-w/ ~/hugo/site/
 	find ~/hugo/site -type f -exec sed -i 's|href="/"|href="https://code.fs.usda.gov/pages/clint-jordan/site"|g' {} +
 	find ~/hugo/site -type f -exec sed -i 's|src="/images/|src="/pages/clint-jordan/site/images/|g' {} +
+	git add --all
+	git commit -m "$$(date -u)"
+	git push
 
 clean-w:
 	rm -rf ~/hugo/blog-site/docs-w
