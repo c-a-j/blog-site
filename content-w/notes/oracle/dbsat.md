@@ -45,6 +45,9 @@ exit
 
 {{< code-show-user lang="shell" prompt="p-acct $" output="3-20" cont-str="" cont-prompt=">" >}}
 sudo -iu oracle
+{{< /code-show-user >}}
+
+{{< code-show-user lang="shell" prompt="oracle $" output="2-20" cont-str="" cont-prompt=">" >}}
 env | grep ORA
 ORACLE_UNQNAME=orcl
 ORA_NLS10=/opt/oracle/product/19/db_1/nls/data
@@ -69,13 +72,18 @@ unzip /tmp/dbsat.zip -d /tmp/dbsat
 {{< code-show-user lang="shell" prompt="oracle $" output="" cont-str="" cont-prompt=">" >}}
 sqlplus / as sysdba
 {{< /code-show-user >}}
-> Note: If the alias exists, simply `sql` can be used
+> Note: An alias for this may exist. Check for it with `alias`.
 
 {{< code-show-user lang="sql" prompt="SQL>" output="" cont-str="" cont-prompt=">" >}}
-alter user system identified by "Myroot10%01Myroot10%04";
+alter user system identified by "PASSWORD";
 alter user system account unlock;
 exit
 {{< /code-show-user >}}
+> Note: `"PASSWORD"` needs to be replaced by a password of sufficient
+> complexity. For example, the password used for this test was 22 characters
+> long and included two capital letters, ten lowercase, eight numbers, and two
+> special characters. Be sure to take note of the password used, it will be
+> needed later.
 
 ## Collect report data
 {{< code-show-user lang="shell" prompt="oracle $" output="" cont-str="" cont-prompt=">" >}}
@@ -86,7 +94,7 @@ bash /tmp/dbsat/dbsat collect -n system@${ORACLE_SID} "${ORACLE_SID}_$(date +%Y-
 
 ## Generate readable report
 {{< code-show-user lang="shell" prompt="oracle $" output="" cont-str="" cont-prompt=">" >}}
-./tmp/dbsat/dbsat report -n -a "${ORACLE_SID}_$(date +%Y-%m-%d)"
+bash /tmp/dbsat/dbsat report -n -a "${ORACLE_SID}_$(date +%Y-%m-%d)"
 {{< /code-show-user >}}
 > Note: The above command will only work if you are generating the `.html`
 > report on the same day that the data was collected. Otherwise you will need to
@@ -102,8 +110,8 @@ exit
 {{< code-show-user lang="shell" prompt="p-acct $" output="" cont-str="" cont-prompt=">" >}}
 cp /tmp/dbsat/reports/REPORT_NAME ~/wherever/you/want/
 {{< /code-show-user >}}
-> Note: Replace REPORT_NAME with the `.html` report filename and
-> `~/wherever/you/want/` to your desired path.
+> Note: Replace `REPORT_NAME` with the `.html` report filename and
+> `~/wherever/you/want/` to the desired path within your home directory.
 
 
 ## Automation idea
