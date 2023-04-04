@@ -1,0 +1,200 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>
+            
+                    template on
+                
+            
+            Clint A Jordan</title>
+        <link>https://code.fs.usda.gov/pages/clint-jordan/site/tags/template.html</link>
+        <description>Recent content  in template
+            on Clint A Jordan</description>
+        
+        <lastBuildDate>Tue, 04 Apr 2023 17:13:50 -0600</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+            <atom:link href="https://code.fs.usda.gov/pages/clint-jordan/site/tags/template/index.xml" rel="self" type="application/rss&#43;xml" />
+        
+            
+            <item>
+                <title>Backup, recovery, and PITR</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-backup-recovery.html</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;logical-backups&#34;&gt;Logical Backups&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#logical-backups&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;pg_dump&#34;&gt;&lt;code&gt;pg_dump&lt;/code&gt;&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#pg_dump&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;database level SQL dump
+&lt;ul&gt;
+&lt;li&gt;does not backup users or tablespaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;does not block readers or writers&lt;/li&gt;
+&lt;li&gt;does not operate with special permissions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;html lang=&#34;en&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt; 
+    &lt;div class=&#34;code-toolbar&#34;&gt;
+        &lt;pre 
+            tabindex=&#34;0&#34; 
+            style=&#34;
+                display:block;
+                color:#f8f8f2;
+                background-color:#272822;
+                -moz-tab-size:4;
+                -o-tab-size:4;tab-size:4;
+                &#34;
+            class=&#34;command-line&#34;
+            lang=&#34;en&#34;
+            data-prompt=&#34;enterprisedb $&#34;
+            data-output=&#34;&#34;
+            data-filter-output=&#34;(out)&#34;
+            data-continuation-str=&#34;&#34;
+            data-continuation-prompt=&#34;&amp;gt;&#34;
+            &gt;
+
+            &lt;code class=&#34;language-shell&#34;&gt;
+                    
+pg_dump [options] [dbname]
+
+            &lt;/code&gt;
+        &lt;/pre&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/html&gt;
+
+&lt;p&gt;List options.&lt;/p&gt;
+
+&lt;html lang=&#34;en&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt; 
+    &lt;div class=&#34;code-toolbar&#34;&gt;
+        &lt;pre 
+            tabindex=&#34;0&#34; 
+            style=&#34;
+                display:block;
+                color:#f8f8f2;
+                background-color:#272822;
+                -moz-tab-size:4;
+                -o-tab-size:4;tab-size:4;
+                &#34;
+            class=&#34;command-line&#34;
+            lang=&#34;en&#34;
+            data-prompt=&#34;enterprisedb $&#34;
+            data-output=&#34;&#34;
+            data-filter-output=&#34;(out)&#34;
+            data-continuation-str=&#34;&#34;
+            data-continuation-prompt=&#34;&amp;gt;&#34;
+            &gt;
+
+            &lt;code class=&#34;language-shell&#34;&gt;
+                    
+pg_dump --help
+
+            &lt;/code&gt;
+        &lt;/pre&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/html&gt;
+
+
+&lt;h3 id=&#34;pg_dumpall&#34;&gt;&lt;code&gt;pg_dumpall&lt;/code&gt;&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#pg_dumpall&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;cluster level SQL dump&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;physical-backups&#34;&gt;Physical Backups&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#physical-backups&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;p&gt;Copy using OS commands&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;offline file system level backup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Low Level API or &lt;code&gt;pg_basebackup&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;online file system level backup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;pg_basebackup&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;uses replication technique to copy onto a media while server is in use&lt;/li&gt;
+&lt;li&gt;automatically puts server in backup mode before backup and turns it off
+after backup&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories.htmlnotes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags.htmltemplate">template</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-backup-recovery.html</guid>
+                <pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+            
+            <item>
+                <title>notes template</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/template.html</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories.htmlnotes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags.htmltemplate">template</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/template.html</guid>
+                <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+            </item>
+        
+    </channel>
+</rss>
+
+

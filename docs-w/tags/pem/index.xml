@@ -1,0 +1,78 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>
+            
+                    PEM on
+                
+            
+            Clint A Jordan</title>
+        <link>https://code.fs.usda.gov/pages/clint-jordan/site/tags/pem.html</link>
+        <description>Recent content  in PEM
+            on Clint A Jordan</description>
+        
+        <lastBuildDate>Tue, 04 Apr 2023 17:13:50 -0600</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+            <atom:link href="https://code.fs.usda.gov/pages/clint-jordan/site/tags/pem/index.xml" rel="self" type="application/rss&#43;xml" />
+        
+            
+            <item>
+                <title>EDB Postgres Enterprise Manager</title>
+                <link>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-pem.html</link>
+                
+                
+                <description>&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;common-connection-problems&#34;&gt;Common connection problems&amp;nbsp;&lt;a class=&#34;headline-hash no-text-decoration&#34; href=&#34;#common-connection-problems&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Could not connect to Server - Connection refused
+&lt;ul&gt;
+&lt;li&gt;This error occurs when either the database server isn&amp;rsquo;t running or the
+server isn&amp;rsquo;t configured to accept external TCP/IP connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;FATAL - no ph_hba.conf entry
+&lt;ul&gt;
+&lt;li&gt;This means your server can be contacted over the network, but is not
+configured to accept the connection. Your client is not detected as a legal user
+for the database:wq&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                        <author>Clint.Jordan@fakeEmailToMakeValidatorHappy.com (Clint Jordan)</author>
+                
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/categories.htmlnotes">notes</category>
+                                
+                            
+                        
+                     
+                        
+                             
+                            
+                                
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags.htmledb">EDB</category>
+                                 
+                                    <category domain="https://code.fs.usda.gov/pages/clint-jordan/site/tags.htmlpem">PEM</category>
+                                
+                            
+                        
+                    
+                
+                <guid>https://code.fs.usda.gov/pages/clint-jordan/site/notes/edb/edb-pem.html</guid>
+                <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
+            </item>
+        
+    </channel>
+</rss>
+
+
