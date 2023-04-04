@@ -24,7 +24,7 @@ Upload the archive via WinSCP or other method.
 
 ## Stage archive and extract contents
 Move or copy the archive to `/tmp`
-{{< code-show-user lang="shell" prompt="p-acct $" output="" cont-str="" cont-prompt=">" >}}
+{{< code-show-user lang="shell" prompt="p-acct $" cont-prompt=">" >}}
 mv dbsat.zip /tmp
 {{< /code-show-user >}}
 
