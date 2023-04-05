@@ -8,6 +8,7 @@ tags = ["oracle", "STIG"]
 categories = ["notes"]
 draft = false
 autonumber = false
+printmode = false
 +++
 
 
@@ -80,10 +81,9 @@ alter user system account unlock;
 exit
 {{< /code-show-user >}}
 > Note: `"PASSWORD"` needs to be replaced by a password of sufficient
-> complexity. For example, the password used for this test was 22 characters
-> long and included two capital letters, ten lowercase, eight numbers, and two
-> special characters. Be sure to take note of the password used, it will be
-> needed later.
+> complexity. For example, the password used for this test was
+> `Myroot10%01Myroot10%04`. Since passwords cannot be reused, simply change
+> a few of the numbers to make it work.
 
 ## Collect report data
 {{< code-show-user lang="shell" prompt="oracle $" output="" cont-str="" cont-prompt=">" >}}
