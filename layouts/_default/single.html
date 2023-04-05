@@ -8,7 +8,9 @@
 
 <article class="post h-entry {{ .Section }}">
     <header>
+{{ if not .Params.printmode }} <!--  .-->
         <div class="center">{{ partial "taxo-buttons.html" . }}</div>
+{{ end }}
 
         <h1 class="post-title p-name">{{ .Title }}</h1>
 
@@ -75,7 +77,11 @@
     {{ printf `<small id="day-counter">This is <strong>Day %d</strong> of <a href="https://100daystooffload.com/">#100DaysToOffload</a>.</small>` $day | safeHTML }} 
 {{ end }} -->
 
-{{ partial "jump.html" }}
+
+
+{{ if not .Params.printmode }} <!-- -->
+    {{ partial "jump.html" }}
+{{ end }} <!-- -->
 
 {{ if not .Params.notoc }} <!-- This ToC is rendered in the right sidebar only for wide screens .-->
     {{ with .TableOfContents }}
@@ -94,12 +100,15 @@
     <a href="#">back to <span class="top">top</span></a>
 </div>
 
-<!-- Tags/categories -->
-<div class="right">{{ partial "taxo-buttons.html" . }}</div>
-<div class="clear-float"></div>
 
-<!-- Prev/next post -->
-{{ partial "prev_next.html" . }} 
+{{ if not .Params.printmode }} <!--  .-->
+    <!-- Tags/categories -->
+    <div class="right">{{ partial "taxo-buttons.html" . }}</div>
+    <div class="clear-float"></div>
+
+    <!-- Prev/next post -->
+    {{ partial "prev_next.html" . }} 
+{{ end }}
 
 <!-- <a id="bottom"></a>  -->
 <!-- Send/receive Webmentions -->

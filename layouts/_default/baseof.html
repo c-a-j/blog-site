@@ -17,7 +17,12 @@
             <div class="container">
                 <header class="masthead">
                     <div class="masthead-title no-text-decoration">
-                        <a href="/">{{ site.Title }}</a> <span class="blinking-cursor">❚</span>
+                        {{ if not .Params.printmode }}
+                            <a href="/">{{ site.Title }}</a> <span class="blinking-cursor">❚</span>
+                        {{ else }}
+                            <a>{{ site.Title }}</a> <span class="blinking-cursor">❚</span>
+                        {{ end }}
+    
                     </div>
                     <div class="masthead-tagline">
                         {{ site.Params.tagline }}

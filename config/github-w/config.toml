@@ -4,9 +4,6 @@ contentDir = 'content-w'
 
 title = "Clint A Jordan"
 
-uglyURLs = "true"
-relativeURLs = "true"
-
 [module]
   [module.hugoVersion]
     min = "0.73.0"
