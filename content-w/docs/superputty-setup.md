@@ -7,6 +7,7 @@ lastmod = ""
 tags = ["workflow", "superputty"]
 categories = ["docs"]
 draft = false
+printmode = false
 +++
 
 ## 1. Download and launch SuperPuTTY

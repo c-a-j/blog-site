@@ -42,8 +42,6 @@
 
 {{ define "footer" }}
 
-{{ partial "backlinks.html" (dict "page" .) }}
-
 <!-- Print versions at the end of the post, if specified. -->
 {{ with .Params.versions }}
     {{ $.Scratch.Set "__versions_len" (len .) }}

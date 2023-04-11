@@ -1,12 +1,13 @@
 +++
-title = "documentation template"
+title = "tmux configuration"
 author = ["Clint Jordan"]
-description = "description"
-date = "2020-01-01"
+description = " "
+date = "2023-01-20"
 lastmod = ""
-#tags = [" "]
+tags = ["tmux"]
 categories = ["docs"]
 draft = true
 autonumber = false
 printmode = false
 +++
+
