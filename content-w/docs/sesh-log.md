@@ -40,7 +40,7 @@ files, which contains ANSI escape characters. This is why log files generated
 with `script` provide a little more authenticity than a plain text file. While
 it's technically possible to counterfeit, it would be very difficult and time
 consuming to get it right. If your command prompt and output contain a lot of
-formatting, it would be extremely difficult to accurately replicate. For
+formatting, it would be quite difficult to accurately replicate. For
 example, consider the session below.
 
 {{< rawhtml >}}
@@ -52,6 +52,8 @@ example, consider the session below.
 pre {
   font-family:Courier New;
   font-size:10pt;
+  color:#cccccc;
+  background-color:#272822;
 }
 
 .af_line {
@@ -99,7 +101,7 @@ log file. Instead, open a separate tmux window to use vim.
 {{< /alert >}}
 
 
-### Eliminating ANSI Escape Characters
+## Eliminating ANSI Escape Characters
 Before uploading `script`-generated log files with your tickets, you might want
 to eliminate the ANSI escape characters so the developers can actually read it.
 First, install `ansifilter`.
