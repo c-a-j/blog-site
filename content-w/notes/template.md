@@ -8,5 +8,6 @@ tags = ["template"]
 categories = ["notes"]
 draft = false
 autonumber = false
+printmode = false
 +++
 
