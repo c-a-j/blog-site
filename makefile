@@ -22,6 +22,9 @@ github-w:
 	   --exclude ".git*"\
 	   ~/hugo/blog-site/docs-w/ ~/hugo/site/
 	find ~/hugo/site -type f -exec sed -i 's|href="/"|href="https://code.fs.usda.gov/pages/clint-jordan/site"|g' {} +
+	find ~/hugo/site -type f -exec sed -i 's|href="/docs/|href="https://code.fs.usda.gov/pages/clint-jordan/site/docs/|g' {} +
+	find ~/hugo/site -type f -exec sed -i 's|href="/notes/|href="https://code.fs.usda.gov/pages/clint-jordan/site/notes/|g' {} +
+	find ~/hugo/site -type f -exec sed -i 's|href="/posts/|href="https://code.fs.usda.gov/pages/clint-jordan/site/posts/|g' {} +
 	find ~/hugo/site -type f -exec sed -i 's|src="/images/|src="/pages/clint-jordan/site/images/|g' {} +
 	find ~/hugo/site -type f -exec sed -i 's|href="/css/prism.css|href="/pages/clint-jordan/site/css/prism.css|g' {} +
 	find ~/hugo/site -type f -exec sed -i 's|src="/js/prism.js|src="/pages/clint-jordan/site/js/prism.js|g' {} +

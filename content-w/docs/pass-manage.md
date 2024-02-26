@@ -31,11 +31,11 @@ coworkers or others that might gain access to our systems.
 ### Why `pass`?
 
 There are, of course, many options out there to choose from. I personally like
-to keep things simple and overly secure, so my preference is the standard UNIX
-password manager, `pass`. You can choose to store your passwords locally or
-also push the encrypted contents to a git repository. So, unlike many of the
-other popular password managers, there is no need for your sensitive information
-to be stored on a third party server.
+to keep things simple, so my preference is the standard UNIX password manager,
+`pass`. You can choose to store your passwords locally or also push the
+encrypted contents to a git repository. So, unlike many of the other popular
+password managers, there is no need for your sensitive information to be stored
+on a third party server.
 
 > Note: An enterprise-grade password management service may be in the works for
 > us. Getting it approved and running will certainly take a while. For now,
@@ -45,7 +45,7 @@ to be stored on a third party server.
 
 The required packages are `gpg2`, and `pass`. I'd also recommend installing
 `git`, and `pwgen`. Obviously, you'll need to have [WSL
-installed](/nifty-things/wsl-setup) on your government machine. This tutorial
+installed](/docs/wsl-setup) on your government machine. This tutorial
 assumes that you are using the Ubuntu distribution.
 
 ```text
@@ -164,7 +164,7 @@ Now John's directory structure would look like this.
 .password-store/
 └── usda
     ├── e-auth
-    │   └── clintjordan.gpg
+    │   └── johnsmith.gpg
     └── p-acct
         └── psmitj01.gpg
 {{< /code-no-copy >}}
@@ -185,7 +185,7 @@ Now John's directory structure looks like this.
     └── john.smith@usda.gov.gpg
 └── usda
     ├── e-auth
-    │   └── clintjordan.gpg
+    │   └── johnsmith.gpg
     └── p-acct
         └── psmitj01.gpg
 {{< /code-no-copy >}}
@@ -243,7 +243,7 @@ Password Store
     └── john.smith@usda.gov.gpg
 └── usda
     ├── e-auth
-    │   └── clintjordan.gpg
+    │   └── johnsmith.gpg
     └── p-acct
         └── psmitj01.gpg
 {{< /code-no-copy >}}
@@ -258,7 +258,7 @@ would take an estimated 33,936 centuries to crack, it's not even acceptable for
 a Netflix account. `pwgen` to the rescue.
 
 ```text
-pwgen 30 1 --secure --capitalize --numerals --symbols --remove-chars=\'\`\"\|\$\
+pwgen 30 1 --secure --capitalize 2 --numerals 2 --symbols 3 --remove-chars=\`\'\"\&\$\|\<\>\%\;\+\:\\
 ```
 
 Here I've requested one completely random thirty-character password with mixed
@@ -283,9 +283,9 @@ a Team](https://medium.com/@davidpiegza/using-pass-in-a-team-1aa7adf36592).
 
 Basically, it is possible to have multiple password stores using `pass`. Those
 in a team would only need to share their public key with a repo manager to gain
-access. I'm imagining the workflow might go something like this... Let's say
-Greg Kermit is the master of all things WebLogic, so he is chosen to be the repo
-manger for the WebLogic password store. Initially, Greg
+access. The workflow might go something like this... Let's say Greg Kermit is
+the master of all things WebLogic, so he is chosen to be the repo manger for the
+WebLogic password store. Initially, Greg
 
 1. Initializes the password store
 2. Inserts all shared EDBA WebLogic credentials
